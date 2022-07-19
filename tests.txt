@@ -1,0 +1,5000 @@
+1 + 1, 2
+1 - 1, 0
+1 * 1, 1
+1 / 1, 1
+1 == 1, true
+1 % 1, 0
+1 && 1, 1
+1 || 1, 1
+1 + 0, 1
+1 - 0, 1
+1 * 0, 0
+1 / 0, Infinity
+1 == 0, false
+1 % 0, NaN
+1 && 0, 0
+1 || 0, 1
+1 + -11, -10
+1 - -11, 12
+1 * -11, -11
+1 / -11, -0.09090909090909091
+1 == -11, false
+1 % -11, 1
+1 && -11, -11
+1 || -11, 1
+1 + 5.5, 6.5
+1 - 5.5, -4.5
+1 * 5.5, 5.5
+1 / 5.5, 0.18181818181818182
+1 == 5.5, false
+1 % 5.5, 1
+1 && 5.5, 5.5
+1 || 5.5, 1
+1 + 0.0, 1
+1 - 0.0, 1
+1 * 0.0, 0
+1 / 0.0, Infinity
+1 == 0.0, false
+1 % 0.0, NaN
+1 && 0.0, 0
+1 || 0.0, 1
+1 + true, 2
+1 - true, 0
+1 * true, 1
+1 / true, 1
+1 == true, true
+1 % true, 0
+1 && true, true
+1 || true, 1
+1 + false, 1
+1 - false, 1
+1 * false, 0
+1 / false, Infinity
+1 == false, false
+1 % false, NaN
+1 && false, false
+1 || false, 1
+1 + "string", 1string
+1 - "string", NaN
+1 * "string", NaN
+1 / "string", NaN
+1 == "string", false
+1 % "string", NaN
+1 && "string", string
+1 || "string", 1
+1 + "true", 1true
+1 - "true", NaN
+1 * "true", NaN
+1 / "true", NaN
+1 == "true", false
+1 % "true", NaN
+1 && "true", true
+1 || "true", 1
+1 + "false", 1false
+1 - "false", NaN
+1 * "false", NaN
+1 / "false", NaN
+1 == "false", false
+1 % "false", NaN
+1 && "false", false
+1 || "false", 1
+1 + "null", 1null
+1 - "null", NaN
+1 * "null", NaN
+1 / "null", NaN
+1 == "null", false
+1 % "null", NaN
+1 && "null", null
+1 || "null", 1
+1 + "undefined", 1undefined
+1 - "undefined", NaN
+1 * "undefined", NaN
+1 / "undefined", NaN
+1 == "undefined", false
+1 % "undefined", NaN
+1 && "undefined", undefined
+1 || "undefined", 1
+1 + "", 1
+1 - "", 1
+1 * "", 0
+1 / "", Infinity
+1 == "", false
+1 % "", NaN
+1 && "", 
+1 || "", 1
+1 + "[Object object]", 1[Object object]
+1 - "[Object object]", NaN
+1 * "[Object object]", NaN
+1 / "[Object object]", NaN
+1 == "[Object object]", false
+1 % "[Object object]", NaN
+1 && "[Object object]", [Object object]
+1 || "[Object object]", 1
+1 + "{}", 1{}
+1 - "{}", NaN
+1 * "{}", NaN
+1 / "{}", NaN
+1 == "{}", false
+1 % "{}", NaN
+1 && "{}", {}
+1 || "{}", 1
+1 + "{a:3}", 1{a:3}
+1 - "{a:3}", NaN
+1 * "{a:3}", NaN
+1 / "{a:3}", NaN
+1 == "{a:3}", false
+1 % "{a:3}", NaN
+1 && "{a:3}", {a:3}
+1 || "{a:3}", 1
+1 + {}, 1[object Object]
+1 - {}, NaN
+1 * {}, NaN
+1 / {}, NaN
+1 == {}, false
+1 % {}, NaN
+1 && {}, {}
+1 || {}, 1
+1 + {1: 3}, 1[object Object]
+1 - {1: 3}, NaN
+1 * {1: 3}, NaN
+1 / {1: 3}, NaN
+1 == {1: 3}, false
+1 % {1: 3}, NaN
+1 && {1: 3}, { '1': 3 }
+1 || {1: 3}, 1
+1 + {0: 0}, 1[object Object]
+1 - {0: 0}, NaN
+1 * {0: 0}, NaN
+1 / {0: 0}, NaN
+1 == {0: 0}, false
+1 % {0: 0}, NaN
+1 && {0: 0}, { '0': 0 }
+1 || {0: 0}, 1
+1 + {null:undefined}, 1[object Object]
+1 - {null:undefined}, NaN
+1 * {null:undefined}, NaN
+1 / {null:undefined}, NaN
+1 == {null:undefined}, false
+1 % {null:undefined}, NaN
+1 && {null:undefined}, { null: undefined }
+1 || {null:undefined}, 1
+1 + {a: "b"}, 1[object Object]
+1 - {a: "b"}, NaN
+1 * {a: "b"}, NaN
+1 / {a: "b"}, NaN
+1 == {a: "b"}, false
+1 % {a: "b"}, NaN
+1 && {a: "b"}, { a: 'b' }
+1 || {a: "b"}, 1
+1 + {"": {}}, 1[object Object]
+1 - {"": {}}, NaN
+1 * {"": {}}, NaN
+1 / {"": {}}, NaN
+1 == {"": {}}, false
+1 % {"": {}}, NaN
+1 && {"": {}}, { '': {} }
+1 || {"": {}}, 1
+1 + null, 1
+1 - null, 1
+1 * null, 0
+1 / null, Infinity
+1 == null, false
+1 % null, NaN
+1 && null, null
+1 || null, 1
+1 + undefined, NaN
+1 - undefined, NaN
+1 * undefined, NaN
+1 / undefined, NaN
+1 == undefined, false
+1 % undefined, NaN
+1 && undefined, undefined
+1 || undefined, 1
+1 + NaN, NaN
+1 - NaN, NaN
+1 * NaN, NaN
+1 / NaN, NaN
+1 == NaN, false
+1 % NaN, NaN
+1 && NaN, NaN
+1 || NaN, 1
+0 + 1, 1
+0 - 1, -1
+0 * 1, 0
+0 / 1, 0
+0 == 1, false
+0 % 1, 0
+0 && 1, 0
+0 || 1, 1
+0 + 0, 0
+0 - 0, 0
+0 * 0, 0
+0 / 0, NaN
+0 == 0, true
+0 % 0, NaN
+0 && 0, 0
+0 || 0, 0
+0 + -11, -11
+0 - -11, 11
+0 * -11, -0
+0 / -11, -0
+0 == -11, false
+0 % -11, 0
+0 && -11, 0
+0 || -11, -11
+0 + 5.5, 5.5
+0 - 5.5, -5.5
+0 * 5.5, 0
+0 / 5.5, 0
+0 == 5.5, false
+0 % 5.5, 0
+0 && 5.5, 0
+0 || 5.5, 5.5
+0 + 0.0, 0
+0 - 0.0, 0
+0 * 0.0, 0
+0 / 0.0, NaN
+0 == 0.0, true
+0 % 0.0, NaN
+0 && 0.0, 0
+0 || 0.0, 0
+0 + true, 1
+0 - true, -1
+0 * true, 0
+0 / true, 0
+0 == true, false
+0 % true, 0
+0 && true, 0
+0 || true, true
+0 + false, 0
+0 - false, 0
+0 * false, 0
+0 / false, NaN
+0 == false, true
+0 % false, NaN
+0 && false, 0
+0 || false, false
+0 + "string", 0string
+0 - "string", NaN
+0 * "string", NaN
+0 / "string", NaN
+0 == "string", false
+0 % "string", NaN
+0 && "string", 0
+0 || "string", string
+0 + "true", 0true
+0 - "true", NaN
+0 * "true", NaN
+0 / "true", NaN
+0 == "true", false
+0 % "true", NaN
+0 && "true", 0
+0 || "true", true
+0 + "false", 0false
+0 - "false", NaN
+0 * "false", NaN
+0 / "false", NaN
+0 == "false", false
+0 % "false", NaN
+0 && "false", 0
+0 || "false", false
+0 + "null", 0null
+0 - "null", NaN
+0 * "null", NaN
+0 / "null", NaN
+0 == "null", false
+0 % "null", NaN
+0 && "null", 0
+0 || "null", null
+0 + "undefined", 0undefined
+0 - "undefined", NaN
+0 * "undefined", NaN
+0 / "undefined", NaN
+0 == "undefined", false
+0 % "undefined", NaN
+0 && "undefined", 0
+0 || "undefined", undefined
+0 + "", 0
+0 - "", 0
+0 * "", 0
+0 / "", NaN
+0 == "", true
+0 % "", NaN
+0 && "", 0
+0 || "", 
+0 + "[Object object]", 0[Object object]
+0 - "[Object object]", NaN
+0 * "[Object object]", NaN
+0 / "[Object object]", NaN
+0 == "[Object object]", false
+0 % "[Object object]", NaN
+0 && "[Object object]", 0
+0 || "[Object object]", [Object object]
+0 + "{}", 0{}
+0 - "{}", NaN
+0 * "{}", NaN
+0 / "{}", NaN
+0 == "{}", false
+0 % "{}", NaN
+0 && "{}", 0
+0 || "{}", {}
+0 + "{a:3}", 0{a:3}
+0 - "{a:3}", NaN
+0 * "{a:3}", NaN
+0 / "{a:3}", NaN
+0 == "{a:3}", false
+0 % "{a:3}", NaN
+0 && "{a:3}", 0
+0 || "{a:3}", {a:3}
+0 + {}, 0[object Object]
+0 - {}, NaN
+0 * {}, NaN
+0 / {}, NaN
+0 == {}, false
+0 % {}, NaN
+0 && {}, 0
+0 || {}, {}
+0 + {1: 3}, 0[object Object]
+0 - {1: 3}, NaN
+0 * {1: 3}, NaN
+0 / {1: 3}, NaN
+0 == {1: 3}, false
+0 % {1: 3}, NaN
+0 && {1: 3}, 0
+0 || {1: 3}, { '1': 3 }
+0 + {0: 0}, 0[object Object]
+0 - {0: 0}, NaN
+0 * {0: 0}, NaN
+0 / {0: 0}, NaN
+0 == {0: 0}, false
+0 % {0: 0}, NaN
+0 && {0: 0}, 0
+0 || {0: 0}, { '0': 0 }
+0 + {null:undefined}, 0[object Object]
+0 - {null:undefined}, NaN
+0 * {null:undefined}, NaN
+0 / {null:undefined}, NaN
+0 == {null:undefined}, false
+0 % {null:undefined}, NaN
+0 && {null:undefined}, 0
+0 || {null:undefined}, { null: undefined }
+0 + {a: "b"}, 0[object Object]
+0 - {a: "b"}, NaN
+0 * {a: "b"}, NaN
+0 / {a: "b"}, NaN
+0 == {a: "b"}, false
+0 % {a: "b"}, NaN
+0 && {a: "b"}, 0
+0 || {a: "b"}, { a: 'b' }
+0 + {"": {}}, 0[object Object]
+0 - {"": {}}, NaN
+0 * {"": {}}, NaN
+0 / {"": {}}, NaN
+0 == {"": {}}, false
+0 % {"": {}}, NaN
+0 && {"": {}}, 0
+0 || {"": {}}, { '': {} }
+0 + null, 0
+0 - null, 0
+0 * null, 0
+0 / null, NaN
+0 == null, false
+0 % null, NaN
+0 && null, 0
+0 || null, null
+0 + undefined, NaN
+0 - undefined, NaN
+0 * undefined, NaN
+0 / undefined, NaN
+0 == undefined, false
+0 % undefined, NaN
+0 && undefined, 0
+0 || undefined, undefined
+0 + NaN, NaN
+0 - NaN, NaN
+0 * NaN, NaN
+0 / NaN, NaN
+0 == NaN, false
+0 % NaN, NaN
+0 && NaN, 0
+0 || NaN, NaN
+-11 + 1, -10
+-11 - 1, -12
+-11 * 1, -11
+-11 / 1, -11
+-11 == 1, false
+-11 % 1, -0
+-11 && 1, 1
+-11 || 1, -11
+-11 + 0, -11
+-11 - 0, -11
+-11 * 0, -0
+-11 / 0, -Infinity
+-11 == 0, false
+-11 % 0, NaN
+-11 && 0, 0
+-11 || 0, -11
+-11 + -11, -22
+-11 - -11, 0
+-11 * -11, 121
+-11 / -11, 1
+-11 == -11, true
+-11 % -11, -0
+-11 && -11, -11
+-11 || -11, -11
+-11 + 5.5, -5.5
+-11 - 5.5, -16.5
+-11 * 5.5, -60.5
+-11 / 5.5, -2
+-11 == 5.5, false
+-11 % 5.5, -0
+-11 && 5.5, 5.5
+-11 || 5.5, -11
+-11 + 0.0, -11
+-11 - 0.0, -11
+-11 * 0.0, -0
+-11 / 0.0, -Infinity
+-11 == 0.0, false
+-11 % 0.0, NaN
+-11 && 0.0, 0
+-11 || 0.0, -11
+-11 + true, -10
+-11 - true, -12
+-11 * true, -11
+-11 / true, -11
+-11 == true, false
+-11 % true, -0
+-11 && true, true
+-11 || true, -11
+-11 + false, -11
+-11 - false, -11
+-11 * false, -0
+-11 / false, -Infinity
+-11 == false, false
+-11 % false, NaN
+-11 && false, false
+-11 || false, -11
+-11 + "string", -11string
+-11 - "string", NaN
+-11 * "string", NaN
+-11 / "string", NaN
+-11 == "string", false
+-11 % "string", NaN
+-11 && "string", string
+-11 || "string", -11
+-11 + "true", -11true
+-11 - "true", NaN
+-11 * "true", NaN
+-11 / "true", NaN
+-11 == "true", false
+-11 % "true", NaN
+-11 && "true", true
+-11 || "true", -11
+-11 + "false", -11false
+-11 - "false", NaN
+-11 * "false", NaN
+-11 / "false", NaN
+-11 == "false", false
+-11 % "false", NaN
+-11 && "false", false
+-11 || "false", -11
+-11 + "null", -11null
+-11 - "null", NaN
+-11 * "null", NaN
+-11 / "null", NaN
+-11 == "null", false
+-11 % "null", NaN
+-11 && "null", null
+-11 || "null", -11
+-11 + "undefined", -11undefined
+-11 - "undefined", NaN
+-11 * "undefined", NaN
+-11 / "undefined", NaN
+-11 == "undefined", false
+-11 % "undefined", NaN
+-11 && "undefined", undefined
+-11 || "undefined", -11
+-11 + "", -11
+-11 - "", -11
+-11 * "", -0
+-11 / "", -Infinity
+-11 == "", false
+-11 % "", NaN
+-11 && "", 
+-11 || "", -11
+-11 + "[Object object]", -11[Object object]
+-11 - "[Object object]", NaN
+-11 * "[Object object]", NaN
+-11 / "[Object object]", NaN
+-11 == "[Object object]", false
+-11 % "[Object object]", NaN
+-11 && "[Object object]", [Object object]
+-11 || "[Object object]", -11
+-11 + "{}", -11{}
+-11 - "{}", NaN
+-11 * "{}", NaN
+-11 / "{}", NaN
+-11 == "{}", false
+-11 % "{}", NaN
+-11 && "{}", {}
+-11 || "{}", -11
+-11 + "{a:3}", -11{a:3}
+-11 - "{a:3}", NaN
+-11 * "{a:3}", NaN
+-11 / "{a:3}", NaN
+-11 == "{a:3}", false
+-11 % "{a:3}", NaN
+-11 && "{a:3}", {a:3}
+-11 || "{a:3}", -11
+-11 + {}, -11[object Object]
+-11 - {}, NaN
+-11 * {}, NaN
+-11 / {}, NaN
+-11 == {}, false
+-11 % {}, NaN
+-11 && {}, {}
+-11 || {}, -11
+-11 + {1: 3}, -11[object Object]
+-11 - {1: 3}, NaN
+-11 * {1: 3}, NaN
+-11 / {1: 3}, NaN
+-11 == {1: 3}, false
+-11 % {1: 3}, NaN
+-11 && {1: 3}, { '1': 3 }
+-11 || {1: 3}, -11
+-11 + {0: 0}, -11[object Object]
+-11 - {0: 0}, NaN
+-11 * {0: 0}, NaN
+-11 / {0: 0}, NaN
+-11 == {0: 0}, false
+-11 % {0: 0}, NaN
+-11 && {0: 0}, { '0': 0 }
+-11 || {0: 0}, -11
+-11 + {null:undefined}, -11[object Object]
+-11 - {null:undefined}, NaN
+-11 * {null:undefined}, NaN
+-11 / {null:undefined}, NaN
+-11 == {null:undefined}, false
+-11 % {null:undefined}, NaN
+-11 && {null:undefined}, { null: undefined }
+-11 || {null:undefined}, -11
+-11 + {a: "b"}, -11[object Object]
+-11 - {a: "b"}, NaN
+-11 * {a: "b"}, NaN
+-11 / {a: "b"}, NaN
+-11 == {a: "b"}, false
+-11 % {a: "b"}, NaN
+-11 && {a: "b"}, { a: 'b' }
+-11 || {a: "b"}, -11
+-11 + {"": {}}, -11[object Object]
+-11 - {"": {}}, NaN
+-11 * {"": {}}, NaN
+-11 / {"": {}}, NaN
+-11 == {"": {}}, false
+-11 % {"": {}}, NaN
+-11 && {"": {}}, { '': {} }
+-11 || {"": {}}, -11
+-11 + null, -11
+-11 - null, -11
+-11 * null, -0
+-11 / null, -Infinity
+-11 == null, false
+-11 % null, NaN
+-11 && null, null
+-11 || null, -11
+-11 + undefined, NaN
+-11 - undefined, NaN
+-11 * undefined, NaN
+-11 / undefined, NaN
+-11 == undefined, false
+-11 % undefined, NaN
+-11 && undefined, undefined
+-11 || undefined, -11
+-11 + NaN, NaN
+-11 - NaN, NaN
+-11 * NaN, NaN
+-11 / NaN, NaN
+-11 == NaN, false
+-11 % NaN, NaN
+-11 && NaN, NaN
+-11 || NaN, -11
+5.5 + 1, 6.5
+5.5 - 1, 4.5
+5.5 * 1, 5.5
+5.5 / 1, 5.5
+5.5 == 1, false
+5.5 % 1, 0.5
+5.5 && 1, 1
+5.5 || 1, 5.5
+5.5 + 0, 5.5
+5.5 - 0, 5.5
+5.5 * 0, 0
+5.5 / 0, Infinity
+5.5 == 0, false
+5.5 % 0, NaN
+5.5 && 0, 0
+5.5 || 0, 5.5
+5.5 + -11, -5.5
+5.5 - -11, 16.5
+5.5 * -11, -60.5
+5.5 / -11, -0.5
+5.5 == -11, false
+5.5 % -11, 5.5
+5.5 && -11, -11
+5.5 || -11, 5.5
+5.5 + 5.5, 11
+5.5 - 5.5, 0
+5.5 * 5.5, 30.25
+5.5 / 5.5, 1
+5.5 == 5.5, true
+5.5 % 5.5, 0
+5.5 && 5.5, 5.5
+5.5 || 5.5, 5.5
+5.5 + 0.0, 5.5
+5.5 - 0.0, 5.5
+5.5 * 0.0, 0
+5.5 / 0.0, Infinity
+5.5 == 0.0, false
+5.5 % 0.0, NaN
+5.5 && 0.0, 0
+5.5 || 0.0, 5.5
+5.5 + true, 6.5
+5.5 - true, 4.5
+5.5 * true, 5.5
+5.5 / true, 5.5
+5.5 == true, false
+5.5 % true, 0.5
+5.5 && true, true
+5.5 || true, 5.5
+5.5 + false, 5.5
+5.5 - false, 5.5
+5.5 * false, 0
+5.5 / false, Infinity
+5.5 == false, false
+5.5 % false, NaN
+5.5 && false, false
+5.5 || false, 5.5
+5.5 + "string", 5.5string
+5.5 - "string", NaN
+5.5 * "string", NaN
+5.5 / "string", NaN
+5.5 == "string", false
+5.5 % "string", NaN
+5.5 && "string", string
+5.5 || "string", 5.5
+5.5 + "true", 5.5true
+5.5 - "true", NaN
+5.5 * "true", NaN
+5.5 / "true", NaN
+5.5 == "true", false
+5.5 % "true", NaN
+5.5 && "true", true
+5.5 || "true", 5.5
+5.5 + "false", 5.5false
+5.5 - "false", NaN
+5.5 * "false", NaN
+5.5 / "false", NaN
+5.5 == "false", false
+5.5 % "false", NaN
+5.5 && "false", false
+5.5 || "false", 5.5
+5.5 + "null", 5.5null
+5.5 - "null", NaN
+5.5 * "null", NaN
+5.5 / "null", NaN
+5.5 == "null", false
+5.5 % "null", NaN
+5.5 && "null", null
+5.5 || "null", 5.5
+5.5 + "undefined", 5.5undefined
+5.5 - "undefined", NaN
+5.5 * "undefined", NaN
+5.5 / "undefined", NaN
+5.5 == "undefined", false
+5.5 % "undefined", NaN
+5.5 && "undefined", undefined
+5.5 || "undefined", 5.5
+5.5 + "", 5.5
+5.5 - "", 5.5
+5.5 * "", 0
+5.5 / "", Infinity
+5.5 == "", false
+5.5 % "", NaN
+5.5 && "", 
+5.5 || "", 5.5
+5.5 + "[Object object]", 5.5[Object object]
+5.5 - "[Object object]", NaN
+5.5 * "[Object object]", NaN
+5.5 / "[Object object]", NaN
+5.5 == "[Object object]", false
+5.5 % "[Object object]", NaN
+5.5 && "[Object object]", [Object object]
+5.5 || "[Object object]", 5.5
+5.5 + "{}", 5.5{}
+5.5 - "{}", NaN
+5.5 * "{}", NaN
+5.5 / "{}", NaN
+5.5 == "{}", false
+5.5 % "{}", NaN
+5.5 && "{}", {}
+5.5 || "{}", 5.5
+5.5 + "{a:3}", 5.5{a:3}
+5.5 - "{a:3}", NaN
+5.5 * "{a:3}", NaN
+5.5 / "{a:3}", NaN
+5.5 == "{a:3}", false
+5.5 % "{a:3}", NaN
+5.5 && "{a:3}", {a:3}
+5.5 || "{a:3}", 5.5
+5.5 + {}, 5.5[object Object]
+5.5 - {}, NaN
+5.5 * {}, NaN
+5.5 / {}, NaN
+5.5 == {}, false
+5.5 % {}, NaN
+5.5 && {}, {}
+5.5 || {}, 5.5
+5.5 + {1: 3}, 5.5[object Object]
+5.5 - {1: 3}, NaN
+5.5 * {1: 3}, NaN
+5.5 / {1: 3}, NaN
+5.5 == {1: 3}, false
+5.5 % {1: 3}, NaN
+5.5 && {1: 3}, { '1': 3 }
+5.5 || {1: 3}, 5.5
+5.5 + {0: 0}, 5.5[object Object]
+5.5 - {0: 0}, NaN
+5.5 * {0: 0}, NaN
+5.5 / {0: 0}, NaN
+5.5 == {0: 0}, false
+5.5 % {0: 0}, NaN
+5.5 && {0: 0}, { '0': 0 }
+5.5 || {0: 0}, 5.5
+5.5 + {null:undefined}, 5.5[object Object]
+5.5 - {null:undefined}, NaN
+5.5 * {null:undefined}, NaN
+5.5 / {null:undefined}, NaN
+5.5 == {null:undefined}, false
+5.5 % {null:undefined}, NaN
+5.5 && {null:undefined}, { null: undefined }
+5.5 || {null:undefined}, 5.5
+5.5 + {a: "b"}, 5.5[object Object]
+5.5 - {a: "b"}, NaN
+5.5 * {a: "b"}, NaN
+5.5 / {a: "b"}, NaN
+5.5 == {a: "b"}, false
+5.5 % {a: "b"}, NaN
+5.5 && {a: "b"}, { a: 'b' }
+5.5 || {a: "b"}, 5.5
+5.5 + {"": {}}, 5.5[object Object]
+5.5 - {"": {}}, NaN
+5.5 * {"": {}}, NaN
+5.5 / {"": {}}, NaN
+5.5 == {"": {}}, false
+5.5 % {"": {}}, NaN
+5.5 && {"": {}}, { '': {} }
+5.5 || {"": {}}, 5.5
+5.5 + null, 5.5
+5.5 - null, 5.5
+5.5 * null, 0
+5.5 / null, Infinity
+5.5 == null, false
+5.5 % null, NaN
+5.5 && null, null
+5.5 || null, 5.5
+5.5 + undefined, NaN
+5.5 - undefined, NaN
+5.5 * undefined, NaN
+5.5 / undefined, NaN
+5.5 == undefined, false
+5.5 % undefined, NaN
+5.5 && undefined, undefined
+5.5 || undefined, 5.5
+5.5 + NaN, NaN
+5.5 - NaN, NaN
+5.5 * NaN, NaN
+5.5 / NaN, NaN
+5.5 == NaN, false
+5.5 % NaN, NaN
+5.5 && NaN, NaN
+5.5 || NaN, 5.5
+0.0 + 1, 1
+0.0 - 1, -1
+0.0 * 1, 0
+0.0 / 1, 0
+0.0 == 1, false
+0.0 % 1, 0
+0.0 && 1, 0
+0.0 || 1, 1
+0.0 + 0, 0
+0.0 - 0, 0
+0.0 * 0, 0
+0.0 / 0, NaN
+0.0 == 0, true
+0.0 % 0, NaN
+0.0 && 0, 0
+0.0 || 0, 0
+0.0 + -11, -11
+0.0 - -11, 11
+0.0 * -11, -0
+0.0 / -11, -0
+0.0 == -11, false
+0.0 % -11, 0
+0.0 && -11, 0
+0.0 || -11, -11
+0.0 + 5.5, 5.5
+0.0 - 5.5, -5.5
+0.0 * 5.5, 0
+0.0 / 5.5, 0
+0.0 == 5.5, false
+0.0 % 5.5, 0
+0.0 && 5.5, 0
+0.0 || 5.5, 5.5
+0.0 + 0.0, 0
+0.0 - 0.0, 0
+0.0 * 0.0, 0
+0.0 / 0.0, NaN
+0.0 == 0.0, true
+0.0 % 0.0, NaN
+0.0 && 0.0, 0
+0.0 || 0.0, 0
+0.0 + true, 1
+0.0 - true, -1
+0.0 * true, 0
+0.0 / true, 0
+0.0 == true, false
+0.0 % true, 0
+0.0 && true, 0
+0.0 || true, true
+0.0 + false, 0
+0.0 - false, 0
+0.0 * false, 0
+0.0 / false, NaN
+0.0 == false, true
+0.0 % false, NaN
+0.0 && false, 0
+0.0 || false, false
+0.0 + "string", 0string
+0.0 - "string", NaN
+0.0 * "string", NaN
+0.0 / "string", NaN
+0.0 == "string", false
+0.0 % "string", NaN
+0.0 && "string", 0
+0.0 || "string", string
+0.0 + "true", 0true
+0.0 - "true", NaN
+0.0 * "true", NaN
+0.0 / "true", NaN
+0.0 == "true", false
+0.0 % "true", NaN
+0.0 && "true", 0
+0.0 || "true", true
+0.0 + "false", 0false
+0.0 - "false", NaN
+0.0 * "false", NaN
+0.0 / "false", NaN
+0.0 == "false", false
+0.0 % "false", NaN
+0.0 && "false", 0
+0.0 || "false", false
+0.0 + "null", 0null
+0.0 - "null", NaN
+0.0 * "null", NaN
+0.0 / "null", NaN
+0.0 == "null", false
+0.0 % "null", NaN
+0.0 && "null", 0
+0.0 || "null", null
+0.0 + "undefined", 0undefined
+0.0 - "undefined", NaN
+0.0 * "undefined", NaN
+0.0 / "undefined", NaN
+0.0 == "undefined", false
+0.0 % "undefined", NaN
+0.0 && "undefined", 0
+0.0 || "undefined", undefined
+0.0 + "", 0
+0.0 - "", 0
+0.0 * "", 0
+0.0 / "", NaN
+0.0 == "", true
+0.0 % "", NaN
+0.0 && "", 0
+0.0 || "", 
+0.0 + "[Object object]", 0[Object object]
+0.0 - "[Object object]", NaN
+0.0 * "[Object object]", NaN
+0.0 / "[Object object]", NaN
+0.0 == "[Object object]", false
+0.0 % "[Object object]", NaN
+0.0 && "[Object object]", 0
+0.0 || "[Object object]", [Object object]
+0.0 + "{}", 0{}
+0.0 - "{}", NaN
+0.0 * "{}", NaN
+0.0 / "{}", NaN
+0.0 == "{}", false
+0.0 % "{}", NaN
+0.0 && "{}", 0
+0.0 || "{}", {}
+0.0 + "{a:3}", 0{a:3}
+0.0 - "{a:3}", NaN
+0.0 * "{a:3}", NaN
+0.0 / "{a:3}", NaN
+0.0 == "{a:3}", false
+0.0 % "{a:3}", NaN
+0.0 && "{a:3}", 0
+0.0 || "{a:3}", {a:3}
+0.0 + {}, 0[object Object]
+0.0 - {}, NaN
+0.0 * {}, NaN
+0.0 / {}, NaN
+0.0 == {}, false
+0.0 % {}, NaN
+0.0 && {}, 0
+0.0 || {}, {}
+0.0 + {1: 3}, 0[object Object]
+0.0 - {1: 3}, NaN
+0.0 * {1: 3}, NaN
+0.0 / {1: 3}, NaN
+0.0 == {1: 3}, false
+0.0 % {1: 3}, NaN
+0.0 && {1: 3}, 0
+0.0 || {1: 3}, { '1': 3 }
+0.0 + {0: 0}, 0[object Object]
+0.0 - {0: 0}, NaN
+0.0 * {0: 0}, NaN
+0.0 / {0: 0}, NaN
+0.0 == {0: 0}, false
+0.0 % {0: 0}, NaN
+0.0 && {0: 0}, 0
+0.0 || {0: 0}, { '0': 0 }
+0.0 + {null:undefined}, 0[object Object]
+0.0 - {null:undefined}, NaN
+0.0 * {null:undefined}, NaN
+0.0 / {null:undefined}, NaN
+0.0 == {null:undefined}, false
+0.0 % {null:undefined}, NaN
+0.0 && {null:undefined}, 0
+0.0 || {null:undefined}, { null: undefined }
+0.0 + {a: "b"}, 0[object Object]
+0.0 - {a: "b"}, NaN
+0.0 * {a: "b"}, NaN
+0.0 / {a: "b"}, NaN
+0.0 == {a: "b"}, false
+0.0 % {a: "b"}, NaN
+0.0 && {a: "b"}, 0
+0.0 || {a: "b"}, { a: 'b' }
+0.0 + {"": {}}, 0[object Object]
+0.0 - {"": {}}, NaN
+0.0 * {"": {}}, NaN
+0.0 / {"": {}}, NaN
+0.0 == {"": {}}, false
+0.0 % {"": {}}, NaN
+0.0 && {"": {}}, 0
+0.0 || {"": {}}, { '': {} }
+0.0 + null, 0
+0.0 - null, 0
+0.0 * null, 0
+0.0 / null, NaN
+0.0 == null, false
+0.0 % null, NaN
+0.0 && null, 0
+0.0 || null, null
+0.0 + undefined, NaN
+0.0 - undefined, NaN
+0.0 * undefined, NaN
+0.0 / undefined, NaN
+0.0 == undefined, false
+0.0 % undefined, NaN
+0.0 && undefined, 0
+0.0 || undefined, undefined
+0.0 + NaN, NaN
+0.0 - NaN, NaN
+0.0 * NaN, NaN
+0.0 / NaN, NaN
+0.0 == NaN, false
+0.0 % NaN, NaN
+0.0 && NaN, 0
+0.0 || NaN, NaN
+true + 1, 2
+true - 1, 0
+true * 1, 1
+true / 1, 1
+true == 1, true
+true % 1, 0
+true && 1, 1
+true || 1, true
+true + 0, 1
+true - 0, 1
+true * 0, 0
+true / 0, Infinity
+true == 0, false
+true % 0, NaN
+true && 0, 0
+true || 0, true
+true + -11, -10
+true - -11, 12
+true * -11, -11
+true / -11, -0.09090909090909091
+true == -11, false
+true % -11, 1
+true && -11, -11
+true || -11, true
+true + 5.5, 6.5
+true - 5.5, -4.5
+true * 5.5, 5.5
+true / 5.5, 0.18181818181818182
+true == 5.5, false
+true % 5.5, 1
+true && 5.5, 5.5
+true || 5.5, true
+true + 0.0, 1
+true - 0.0, 1
+true * 0.0, 0
+true / 0.0, Infinity
+true == 0.0, false
+true % 0.0, NaN
+true && 0.0, 0
+true || 0.0, true
+true + true, 2
+true - true, 0
+true * true, 1
+true / true, 1
+true == true, true
+true % true, 0
+true && true, true
+true || true, true
+true + false, 1
+true - false, 1
+true * false, 0
+true / false, Infinity
+true == false, false
+true % false, NaN
+true && false, false
+true || false, true
+true + "string", truestring
+true - "string", NaN
+true * "string", NaN
+true / "string", NaN
+true == "string", false
+true % "string", NaN
+true && "string", string
+true || "string", true
+true + "true", truetrue
+true - "true", NaN
+true * "true", NaN
+true / "true", NaN
+true == "true", false
+true % "true", NaN
+true && "true", true
+true || "true", true
+true + "false", truefalse
+true - "false", NaN
+true * "false", NaN
+true / "false", NaN
+true == "false", false
+true % "false", NaN
+true && "false", false
+true || "false", true
+true + "null", truenull
+true - "null", NaN
+true * "null", NaN
+true / "null", NaN
+true == "null", false
+true % "null", NaN
+true && "null", null
+true || "null", true
+true + "undefined", trueundefined
+true - "undefined", NaN
+true * "undefined", NaN
+true / "undefined", NaN
+true == "undefined", false
+true % "undefined", NaN
+true && "undefined", undefined
+true || "undefined", true
+true + "", true
+true - "", 1
+true * "", 0
+true / "", Infinity
+true == "", false
+true % "", NaN
+true && "", 
+true || "", true
+true + "[Object object]", true[Object object]
+true - "[Object object]", NaN
+true * "[Object object]", NaN
+true / "[Object object]", NaN
+true == "[Object object]", false
+true % "[Object object]", NaN
+true && "[Object object]", [Object object]
+true || "[Object object]", true
+true + "{}", true{}
+true - "{}", NaN
+true * "{}", NaN
+true / "{}", NaN
+true == "{}", false
+true % "{}", NaN
+true && "{}", {}
+true || "{}", true
+true + "{a:3}", true{a:3}
+true - "{a:3}", NaN
+true * "{a:3}", NaN
+true / "{a:3}", NaN
+true == "{a:3}", false
+true % "{a:3}", NaN
+true && "{a:3}", {a:3}
+true || "{a:3}", true
+true + {}, true[object Object]
+true - {}, NaN
+true * {}, NaN
+true / {}, NaN
+true == {}, false
+true % {}, NaN
+true && {}, {}
+true || {}, true
+true + {1: 3}, true[object Object]
+true - {1: 3}, NaN
+true * {1: 3}, NaN
+true / {1: 3}, NaN
+true == {1: 3}, false
+true % {1: 3}, NaN
+true && {1: 3}, { '1': 3 }
+true || {1: 3}, true
+true + {0: 0}, true[object Object]
+true - {0: 0}, NaN
+true * {0: 0}, NaN
+true / {0: 0}, NaN
+true == {0: 0}, false
+true % {0: 0}, NaN
+true && {0: 0}, { '0': 0 }
+true || {0: 0}, true
+true + {null:undefined}, true[object Object]
+true - {null:undefined}, NaN
+true * {null:undefined}, NaN
+true / {null:undefined}, NaN
+true == {null:undefined}, false
+true % {null:undefined}, NaN
+true && {null:undefined}, { null: undefined }
+true || {null:undefined}, true
+true + {a: "b"}, true[object Object]
+true - {a: "b"}, NaN
+true * {a: "b"}, NaN
+true / {a: "b"}, NaN
+true == {a: "b"}, false
+true % {a: "b"}, NaN
+true && {a: "b"}, { a: 'b' }
+true || {a: "b"}, true
+true + {"": {}}, true[object Object]
+true - {"": {}}, NaN
+true * {"": {}}, NaN
+true / {"": {}}, NaN
+true == {"": {}}, false
+true % {"": {}}, NaN
+true && {"": {}}, { '': {} }
+true || {"": {}}, true
+true + null, 1
+true - null, 1
+true * null, 0
+true / null, Infinity
+true == null, false
+true % null, NaN
+true && null, null
+true || null, true
+true + undefined, NaN
+true - undefined, NaN
+true * undefined, NaN
+true / undefined, NaN
+true == undefined, false
+true % undefined, NaN
+true && undefined, undefined
+true || undefined, true
+true + NaN, NaN
+true - NaN, NaN
+true * NaN, NaN
+true / NaN, NaN
+true == NaN, false
+true % NaN, NaN
+true && NaN, NaN
+true || NaN, true
+false + 1, 1
+false - 1, -1
+false * 1, 0
+false / 1, 0
+false == 1, false
+false % 1, 0
+false && 1, false
+false || 1, 1
+false + 0, 0
+false - 0, 0
+false * 0, 0
+false / 0, NaN
+false == 0, true
+false % 0, NaN
+false && 0, false
+false || 0, 0
+false + -11, -11
+false - -11, 11
+false * -11, -0
+false / -11, -0
+false == -11, false
+false % -11, 0
+false && -11, false
+false || -11, -11
+false + 5.5, 5.5
+false - 5.5, -5.5
+false * 5.5, 0
+false / 5.5, 0
+false == 5.5, false
+false % 5.5, 0
+false && 5.5, false
+false || 5.5, 5.5
+false + 0.0, 0
+false - 0.0, 0
+false * 0.0, 0
+false / 0.0, NaN
+false == 0.0, true
+false % 0.0, NaN
+false && 0.0, false
+false || 0.0, 0
+false + true, 1
+false - true, -1
+false * true, 0
+false / true, 0
+false == true, false
+false % true, 0
+false && true, false
+false || true, true
+false + false, 0
+false - false, 0
+false * false, 0
+false / false, NaN
+false == false, true
+false % false, NaN
+false && false, false
+false || false, false
+false + "string", falsestring
+false - "string", NaN
+false * "string", NaN
+false / "string", NaN
+false == "string", false
+false % "string", NaN
+false && "string", false
+false || "string", string
+false + "true", falsetrue
+false - "true", NaN
+false * "true", NaN
+false / "true", NaN
+false == "true", false
+false % "true", NaN
+false && "true", false
+false || "true", true
+false + "false", falsefalse
+false - "false", NaN
+false * "false", NaN
+false / "false", NaN
+false == "false", false
+false % "false", NaN
+false && "false", false
+false || "false", false
+false + "null", falsenull
+false - "null", NaN
+false * "null", NaN
+false / "null", NaN
+false == "null", false
+false % "null", NaN
+false && "null", false
+false || "null", null
+false + "undefined", falseundefined
+false - "undefined", NaN
+false * "undefined", NaN
+false / "undefined", NaN
+false == "undefined", false
+false % "undefined", NaN
+false && "undefined", false
+false || "undefined", undefined
+false + "", false
+false - "", 0
+false * "", 0
+false / "", NaN
+false == "", true
+false % "", NaN
+false && "", false
+false || "", 
+false + "[Object object]", false[Object object]
+false - "[Object object]", NaN
+false * "[Object object]", NaN
+false / "[Object object]", NaN
+false == "[Object object]", false
+false % "[Object object]", NaN
+false && "[Object object]", false
+false || "[Object object]", [Object object]
+false + "{}", false{}
+false - "{}", NaN
+false * "{}", NaN
+false / "{}", NaN
+false == "{}", false
+false % "{}", NaN
+false && "{}", false
+false || "{}", {}
+false + "{a:3}", false{a:3}
+false - "{a:3}", NaN
+false * "{a:3}", NaN
+false / "{a:3}", NaN
+false == "{a:3}", false
+false % "{a:3}", NaN
+false && "{a:3}", false
+false || "{a:3}", {a:3}
+false + {}, false[object Object]
+false - {}, NaN
+false * {}, NaN
+false / {}, NaN
+false == {}, false
+false % {}, NaN
+false && {}, false
+false || {}, {}
+false + {1: 3}, false[object Object]
+false - {1: 3}, NaN
+false * {1: 3}, NaN
+false / {1: 3}, NaN
+false == {1: 3}, false
+false % {1: 3}, NaN
+false && {1: 3}, false
+false || {1: 3}, { '1': 3 }
+false + {0: 0}, false[object Object]
+false - {0: 0}, NaN
+false * {0: 0}, NaN
+false / {0: 0}, NaN
+false == {0: 0}, false
+false % {0: 0}, NaN
+false && {0: 0}, false
+false || {0: 0}, { '0': 0 }
+false + {null:undefined}, false[object Object]
+false - {null:undefined}, NaN
+false * {null:undefined}, NaN
+false / {null:undefined}, NaN
+false == {null:undefined}, false
+false % {null:undefined}, NaN
+false && {null:undefined}, false
+false || {null:undefined}, { null: undefined }
+false + {a: "b"}, false[object Object]
+false - {a: "b"}, NaN
+false * {a: "b"}, NaN
+false / {a: "b"}, NaN
+false == {a: "b"}, false
+false % {a: "b"}, NaN
+false && {a: "b"}, false
+false || {a: "b"}, { a: 'b' }
+false + {"": {}}, false[object Object]
+false - {"": {}}, NaN
+false * {"": {}}, NaN
+false / {"": {}}, NaN
+false == {"": {}}, false
+false % {"": {}}, NaN
+false && {"": {}}, false
+false || {"": {}}, { '': {} }
+false + null, 0
+false - null, 0
+false * null, 0
+false / null, NaN
+false == null, false
+false % null, NaN
+false && null, false
+false || null, null
+false + undefined, NaN
+false - undefined, NaN
+false * undefined, NaN
+false / undefined, NaN
+false == undefined, false
+false % undefined, NaN
+false && undefined, false
+false || undefined, undefined
+false + NaN, NaN
+false - NaN, NaN
+false * NaN, NaN
+false / NaN, NaN
+false == NaN, false
+false % NaN, NaN
+false && NaN, false
+false || NaN, NaN
+"string" + 1, string1
+"string" - 1, NaN
+"string" * 1, NaN
+"string" / 1, NaN
+"string" == 1, false
+"string" % 1, NaN
+"string" && 1, 1
+"string" || 1, string
+"string" + 0, string0
+"string" - 0, NaN
+"string" * 0, NaN
+"string" / 0, NaN
+"string" == 0, false
+"string" % 0, NaN
+"string" && 0, 0
+"string" || 0, string
+"string" + -11, string-11
+"string" - -11, NaN
+"string" * -11, NaN
+"string" / -11, NaN
+"string" == -11, false
+"string" % -11, NaN
+"string" && -11, -11
+"string" || -11, string
+"string" + 5.5, string5.5
+"string" - 5.5, NaN
+"string" * 5.5, NaN
+"string" / 5.5, NaN
+"string" == 5.5, false
+"string" % 5.5, NaN
+"string" && 5.5, 5.5
+"string" || 5.5, string
+"string" + 0.0, string0
+"string" - 0.0, NaN
+"string" * 0.0, NaN
+"string" / 0.0, NaN
+"string" == 0.0, false
+"string" % 0.0, NaN
+"string" && 0.0, 0
+"string" || 0.0, string
+"string" + true, stringtrue
+"string" - true, NaN
+"string" * true, NaN
+"string" / true, NaN
+"string" == true, false
+"string" % true, NaN
+"string" && true, true
+"string" || true, string
+"string" + false, stringfalse
+"string" - false, NaN
+"string" * false, NaN
+"string" / false, NaN
+"string" == false, false
+"string" % false, NaN
+"string" && false, false
+"string" || false, string
+"string" + "string", stringstring
+"string" - "string", NaN
+"string" * "string", NaN
+"string" / "string", NaN
+"string" == "string", true
+"string" % "string", NaN
+"string" && "string", string
+"string" || "string", string
+"string" + "true", stringtrue
+"string" - "true", NaN
+"string" * "true", NaN
+"string" / "true", NaN
+"string" == "true", false
+"string" % "true", NaN
+"string" && "true", true
+"string" || "true", string
+"string" + "false", stringfalse
+"string" - "false", NaN
+"string" * "false", NaN
+"string" / "false", NaN
+"string" == "false", false
+"string" % "false", NaN
+"string" && "false", false
+"string" || "false", string
+"string" + "null", stringnull
+"string" - "null", NaN
+"string" * "null", NaN
+"string" / "null", NaN
+"string" == "null", false
+"string" % "null", NaN
+"string" && "null", null
+"string" || "null", string
+"string" + "undefined", stringundefined
+"string" - "undefined", NaN
+"string" * "undefined", NaN
+"string" / "undefined", NaN
+"string" == "undefined", false
+"string" % "undefined", NaN
+"string" && "undefined", undefined
+"string" || "undefined", string
+"string" + "", string
+"string" - "", NaN
+"string" * "", NaN
+"string" / "", NaN
+"string" == "", false
+"string" % "", NaN
+"string" && "", 
+"string" || "", string
+"string" + "[Object object]", string[Object object]
+"string" - "[Object object]", NaN
+"string" * "[Object object]", NaN
+"string" / "[Object object]", NaN
+"string" == "[Object object]", false
+"string" % "[Object object]", NaN
+"string" && "[Object object]", [Object object]
+"string" || "[Object object]", string
+"string" + "{}", string{}
+"string" - "{}", NaN
+"string" * "{}", NaN
+"string" / "{}", NaN
+"string" == "{}", false
+"string" % "{}", NaN
+"string" && "{}", {}
+"string" || "{}", string
+"string" + "{a:3}", string{a:3}
+"string" - "{a:3}", NaN
+"string" * "{a:3}", NaN
+"string" / "{a:3}", NaN
+"string" == "{a:3}", false
+"string" % "{a:3}", NaN
+"string" && "{a:3}", {a:3}
+"string" || "{a:3}", string
+"string" + {}, string[object Object]
+"string" - {}, NaN
+"string" * {}, NaN
+"string" / {}, NaN
+"string" == {}, false
+"string" % {}, NaN
+"string" && {}, {}
+"string" || {}, string
+"string" + {1: 3}, string[object Object]
+"string" - {1: 3}, NaN
+"string" * {1: 3}, NaN
+"string" / {1: 3}, NaN
+"string" == {1: 3}, false
+"string" % {1: 3}, NaN
+"string" && {1: 3}, { '1': 3 }
+"string" || {1: 3}, string
+"string" + {0: 0}, string[object Object]
+"string" - {0: 0}, NaN
+"string" * {0: 0}, NaN
+"string" / {0: 0}, NaN
+"string" == {0: 0}, false
+"string" % {0: 0}, NaN
+"string" && {0: 0}, { '0': 0 }
+"string" || {0: 0}, string
+"string" + {null:undefined}, string[object Object]
+"string" - {null:undefined}, NaN
+"string" * {null:undefined}, NaN
+"string" / {null:undefined}, NaN
+"string" == {null:undefined}, false
+"string" % {null:undefined}, NaN
+"string" && {null:undefined}, { null: undefined }
+"string" || {null:undefined}, string
+"string" + {a: "b"}, string[object Object]
+"string" - {a: "b"}, NaN
+"string" * {a: "b"}, NaN
+"string" / {a: "b"}, NaN
+"string" == {a: "b"}, false
+"string" % {a: "b"}, NaN
+"string" && {a: "b"}, { a: 'b' }
+"string" || {a: "b"}, string
+"string" + {"": {}}, string[object Object]
+"string" - {"": {}}, NaN
+"string" * {"": {}}, NaN
+"string" / {"": {}}, NaN
+"string" == {"": {}}, false
+"string" % {"": {}}, NaN
+"string" && {"": {}}, { '': {} }
+"string" || {"": {}}, string
+"string" + null, stringnull
+"string" - null, NaN
+"string" * null, NaN
+"string" / null, NaN
+"string" == null, false
+"string" % null, NaN
+"string" && null, null
+"string" || null, string
+"string" + undefined, stringundefined
+"string" - undefined, NaN
+"string" * undefined, NaN
+"string" / undefined, NaN
+"string" == undefined, false
+"string" % undefined, NaN
+"string" && undefined, undefined
+"string" || undefined, string
+"string" + NaN, stringNaN
+"string" - NaN, NaN
+"string" * NaN, NaN
+"string" / NaN, NaN
+"string" == NaN, false
+"string" % NaN, NaN
+"string" && NaN, NaN
+"string" || NaN, string
+"true" + 1, true1
+"true" - 1, NaN
+"true" * 1, NaN
+"true" / 1, NaN
+"true" == 1, false
+"true" % 1, NaN
+"true" && 1, 1
+"true" || 1, true
+"true" + 0, true0
+"true" - 0, NaN
+"true" * 0, NaN
+"true" / 0, NaN
+"true" == 0, false
+"true" % 0, NaN
+"true" && 0, 0
+"true" || 0, true
+"true" + -11, true-11
+"true" - -11, NaN
+"true" * -11, NaN
+"true" / -11, NaN
+"true" == -11, false
+"true" % -11, NaN
+"true" && -11, -11
+"true" || -11, true
+"true" + 5.5, true5.5
+"true" - 5.5, NaN
+"true" * 5.5, NaN
+"true" / 5.5, NaN
+"true" == 5.5, false
+"true" % 5.5, NaN
+"true" && 5.5, 5.5
+"true" || 5.5, true
+"true" + 0.0, true0
+"true" - 0.0, NaN
+"true" * 0.0, NaN
+"true" / 0.0, NaN
+"true" == 0.0, false
+"true" % 0.0, NaN
+"true" && 0.0, 0
+"true" || 0.0, true
+"true" + true, truetrue
+"true" - true, NaN
+"true" * true, NaN
+"true" / true, NaN
+"true" == true, false
+"true" % true, NaN
+"true" && true, true
+"true" || true, true
+"true" + false, truefalse
+"true" - false, NaN
+"true" * false, NaN
+"true" / false, NaN
+"true" == false, false
+"true" % false, NaN
+"true" && false, false
+"true" || false, true
+"true" + "string", truestring
+"true" - "string", NaN
+"true" * "string", NaN
+"true" / "string", NaN
+"true" == "string", false
+"true" % "string", NaN
+"true" && "string", string
+"true" || "string", true
+"true" + "true", truetrue
+"true" - "true", NaN
+"true" * "true", NaN
+"true" / "true", NaN
+"true" == "true", true
+"true" % "true", NaN
+"true" && "true", true
+"true" || "true", true
+"true" + "false", truefalse
+"true" - "false", NaN
+"true" * "false", NaN
+"true" / "false", NaN
+"true" == "false", false
+"true" % "false", NaN
+"true" && "false", false
+"true" || "false", true
+"true" + "null", truenull
+"true" - "null", NaN
+"true" * "null", NaN
+"true" / "null", NaN
+"true" == "null", false
+"true" % "null", NaN
+"true" && "null", null
+"true" || "null", true
+"true" + "undefined", trueundefined
+"true" - "undefined", NaN
+"true" * "undefined", NaN
+"true" / "undefined", NaN
+"true" == "undefined", false
+"true" % "undefined", NaN
+"true" && "undefined", undefined
+"true" || "undefined", true
+"true" + "", true
+"true" - "", NaN
+"true" * "", NaN
+"true" / "", NaN
+"true" == "", false
+"true" % "", NaN
+"true" && "", 
+"true" || "", true
+"true" + "[Object object]", true[Object object]
+"true" - "[Object object]", NaN
+"true" * "[Object object]", NaN
+"true" / "[Object object]", NaN
+"true" == "[Object object]", false
+"true" % "[Object object]", NaN
+"true" && "[Object object]", [Object object]
+"true" || "[Object object]", true
+"true" + "{}", true{}
+"true" - "{}", NaN
+"true" * "{}", NaN
+"true" / "{}", NaN
+"true" == "{}", false
+"true" % "{}", NaN
+"true" && "{}", {}
+"true" || "{}", true
+"true" + "{a:3}", true{a:3}
+"true" - "{a:3}", NaN
+"true" * "{a:3}", NaN
+"true" / "{a:3}", NaN
+"true" == "{a:3}", false
+"true" % "{a:3}", NaN
+"true" && "{a:3}", {a:3}
+"true" || "{a:3}", true
+"true" + {}, true[object Object]
+"true" - {}, NaN
+"true" * {}, NaN
+"true" / {}, NaN
+"true" == {}, false
+"true" % {}, NaN
+"true" && {}, {}
+"true" || {}, true
+"true" + {1: 3}, true[object Object]
+"true" - {1: 3}, NaN
+"true" * {1: 3}, NaN
+"true" / {1: 3}, NaN
+"true" == {1: 3}, false
+"true" % {1: 3}, NaN
+"true" && {1: 3}, { '1': 3 }
+"true" || {1: 3}, true
+"true" + {0: 0}, true[object Object]
+"true" - {0: 0}, NaN
+"true" * {0: 0}, NaN
+"true" / {0: 0}, NaN
+"true" == {0: 0}, false
+"true" % {0: 0}, NaN
+"true" && {0: 0}, { '0': 0 }
+"true" || {0: 0}, true
+"true" + {null:undefined}, true[object Object]
+"true" - {null:undefined}, NaN
+"true" * {null:undefined}, NaN
+"true" / {null:undefined}, NaN
+"true" == {null:undefined}, false
+"true" % {null:undefined}, NaN
+"true" && {null:undefined}, { null: undefined }
+"true" || {null:undefined}, true
+"true" + {a: "b"}, true[object Object]
+"true" - {a: "b"}, NaN
+"true" * {a: "b"}, NaN
+"true" / {a: "b"}, NaN
+"true" == {a: "b"}, false
+"true" % {a: "b"}, NaN
+"true" && {a: "b"}, { a: 'b' }
+"true" || {a: "b"}, true
+"true" + {"": {}}, true[object Object]
+"true" - {"": {}}, NaN
+"true" * {"": {}}, NaN
+"true" / {"": {}}, NaN
+"true" == {"": {}}, false
+"true" % {"": {}}, NaN
+"true" && {"": {}}, { '': {} }
+"true" || {"": {}}, true
+"true" + null, truenull
+"true" - null, NaN
+"true" * null, NaN
+"true" / null, NaN
+"true" == null, false
+"true" % null, NaN
+"true" && null, null
+"true" || null, true
+"true" + undefined, trueundefined
+"true" - undefined, NaN
+"true" * undefined, NaN
+"true" / undefined, NaN
+"true" == undefined, false
+"true" % undefined, NaN
+"true" && undefined, undefined
+"true" || undefined, true
+"true" + NaN, trueNaN
+"true" - NaN, NaN
+"true" * NaN, NaN
+"true" / NaN, NaN
+"true" == NaN, false
+"true" % NaN, NaN
+"true" && NaN, NaN
+"true" || NaN, true
+"false" + 1, false1
+"false" - 1, NaN
+"false" * 1, NaN
+"false" / 1, NaN
+"false" == 1, false
+"false" % 1, NaN
+"false" && 1, 1
+"false" || 1, false
+"false" + 0, false0
+"false" - 0, NaN
+"false" * 0, NaN
+"false" / 0, NaN
+"false" == 0, false
+"false" % 0, NaN
+"false" && 0, 0
+"false" || 0, false
+"false" + -11, false-11
+"false" - -11, NaN
+"false" * -11, NaN
+"false" / -11, NaN
+"false" == -11, false
+"false" % -11, NaN
+"false" && -11, -11
+"false" || -11, false
+"false" + 5.5, false5.5
+"false" - 5.5, NaN
+"false" * 5.5, NaN
+"false" / 5.5, NaN
+"false" == 5.5, false
+"false" % 5.5, NaN
+"false" && 5.5, 5.5
+"false" || 5.5, false
+"false" + 0.0, false0
+"false" - 0.0, NaN
+"false" * 0.0, NaN
+"false" / 0.0, NaN
+"false" == 0.0, false
+"false" % 0.0, NaN
+"false" && 0.0, 0
+"false" || 0.0, false
+"false" + true, falsetrue
+"false" - true, NaN
+"false" * true, NaN
+"false" / true, NaN
+"false" == true, false
+"false" % true, NaN
+"false" && true, true
+"false" || true, false
+"false" + false, falsefalse
+"false" - false, NaN
+"false" * false, NaN
+"false" / false, NaN
+"false" == false, false
+"false" % false, NaN
+"false" && false, false
+"false" || false, false
+"false" + "string", falsestring
+"false" - "string", NaN
+"false" * "string", NaN
+"false" / "string", NaN
+"false" == "string", false
+"false" % "string", NaN
+"false" && "string", string
+"false" || "string", false
+"false" + "true", falsetrue
+"false" - "true", NaN
+"false" * "true", NaN
+"false" / "true", NaN
+"false" == "true", false
+"false" % "true", NaN
+"false" && "true", true
+"false" || "true", false
+"false" + "false", falsefalse
+"false" - "false", NaN
+"false" * "false", NaN
+"false" / "false", NaN
+"false" == "false", true
+"false" % "false", NaN
+"false" && "false", false
+"false" || "false", false
+"false" + "null", falsenull
+"false" - "null", NaN
+"false" * "null", NaN
+"false" / "null", NaN
+"false" == "null", false
+"false" % "null", NaN
+"false" && "null", null
+"false" || "null", false
+"false" + "undefined", falseundefined
+"false" - "undefined", NaN
+"false" * "undefined", NaN
+"false" / "undefined", NaN
+"false" == "undefined", false
+"false" % "undefined", NaN
+"false" && "undefined", undefined
+"false" || "undefined", false
+"false" + "", false
+"false" - "", NaN
+"false" * "", NaN
+"false" / "", NaN
+"false" == "", false
+"false" % "", NaN
+"false" && "", 
+"false" || "", false
+"false" + "[Object object]", false[Object object]
+"false" - "[Object object]", NaN
+"false" * "[Object object]", NaN
+"false" / "[Object object]", NaN
+"false" == "[Object object]", false
+"false" % "[Object object]", NaN
+"false" && "[Object object]", [Object object]
+"false" || "[Object object]", false
+"false" + "{}", false{}
+"false" - "{}", NaN
+"false" * "{}", NaN
+"false" / "{}", NaN
+"false" == "{}", false
+"false" % "{}", NaN
+"false" && "{}", {}
+"false" || "{}", false
+"false" + "{a:3}", false{a:3}
+"false" - "{a:3}", NaN
+"false" * "{a:3}", NaN
+"false" / "{a:3}", NaN
+"false" == "{a:3}", false
+"false" % "{a:3}", NaN
+"false" && "{a:3}", {a:3}
+"false" || "{a:3}", false
+"false" + {}, false[object Object]
+"false" - {}, NaN
+"false" * {}, NaN
+"false" / {}, NaN
+"false" == {}, false
+"false" % {}, NaN
+"false" && {}, {}
+"false" || {}, false
+"false" + {1: 3}, false[object Object]
+"false" - {1: 3}, NaN
+"false" * {1: 3}, NaN
+"false" / {1: 3}, NaN
+"false" == {1: 3}, false
+"false" % {1: 3}, NaN
+"false" && {1: 3}, { '1': 3 }
+"false" || {1: 3}, false
+"false" + {0: 0}, false[object Object]
+"false" - {0: 0}, NaN
+"false" * {0: 0}, NaN
+"false" / {0: 0}, NaN
+"false" == {0: 0}, false
+"false" % {0: 0}, NaN
+"false" && {0: 0}, { '0': 0 }
+"false" || {0: 0}, false
+"false" + {null:undefined}, false[object Object]
+"false" - {null:undefined}, NaN
+"false" * {null:undefined}, NaN
+"false" / {null:undefined}, NaN
+"false" == {null:undefined}, false
+"false" % {null:undefined}, NaN
+"false" && {null:undefined}, { null: undefined }
+"false" || {null:undefined}, false
+"false" + {a: "b"}, false[object Object]
+"false" - {a: "b"}, NaN
+"false" * {a: "b"}, NaN
+"false" / {a: "b"}, NaN
+"false" == {a: "b"}, false
+"false" % {a: "b"}, NaN
+"false" && {a: "b"}, { a: 'b' }
+"false" || {a: "b"}, false
+"false" + {"": {}}, false[object Object]
+"false" - {"": {}}, NaN
+"false" * {"": {}}, NaN
+"false" / {"": {}}, NaN
+"false" == {"": {}}, false
+"false" % {"": {}}, NaN
+"false" && {"": {}}, { '': {} }
+"false" || {"": {}}, false
+"false" + null, falsenull
+"false" - null, NaN
+"false" * null, NaN
+"false" / null, NaN
+"false" == null, false
+"false" % null, NaN
+"false" && null, null
+"false" || null, false
+"false" + undefined, falseundefined
+"false" - undefined, NaN
+"false" * undefined, NaN
+"false" / undefined, NaN
+"false" == undefined, false
+"false" % undefined, NaN
+"false" && undefined, undefined
+"false" || undefined, false
+"false" + NaN, falseNaN
+"false" - NaN, NaN
+"false" * NaN, NaN
+"false" / NaN, NaN
+"false" == NaN, false
+"false" % NaN, NaN
+"false" && NaN, NaN
+"false" || NaN, false
+"null" + 1, null1
+"null" - 1, NaN
+"null" * 1, NaN
+"null" / 1, NaN
+"null" == 1, false
+"null" % 1, NaN
+"null" && 1, 1
+"null" || 1, null
+"null" + 0, null0
+"null" - 0, NaN
+"null" * 0, NaN
+"null" / 0, NaN
+"null" == 0, false
+"null" % 0, NaN
+"null" && 0, 0
+"null" || 0, null
+"null" + -11, null-11
+"null" - -11, NaN
+"null" * -11, NaN
+"null" / -11, NaN
+"null" == -11, false
+"null" % -11, NaN
+"null" && -11, -11
+"null" || -11, null
+"null" + 5.5, null5.5
+"null" - 5.5, NaN
+"null" * 5.5, NaN
+"null" / 5.5, NaN
+"null" == 5.5, false
+"null" % 5.5, NaN
+"null" && 5.5, 5.5
+"null" || 5.5, null
+"null" + 0.0, null0
+"null" - 0.0, NaN
+"null" * 0.0, NaN
+"null" / 0.0, NaN
+"null" == 0.0, false
+"null" % 0.0, NaN
+"null" && 0.0, 0
+"null" || 0.0, null
+"null" + true, nulltrue
+"null" - true, NaN
+"null" * true, NaN
+"null" / true, NaN
+"null" == true, false
+"null" % true, NaN
+"null" && true, true
+"null" || true, null
+"null" + false, nullfalse
+"null" - false, NaN
+"null" * false, NaN
+"null" / false, NaN
+"null" == false, false
+"null" % false, NaN
+"null" && false, false
+"null" || false, null
+"null" + "string", nullstring
+"null" - "string", NaN
+"null" * "string", NaN
+"null" / "string", NaN
+"null" == "string", false
+"null" % "string", NaN
+"null" && "string", string
+"null" || "string", null
+"null" + "true", nulltrue
+"null" - "true", NaN
+"null" * "true", NaN
+"null" / "true", NaN
+"null" == "true", false
+"null" % "true", NaN
+"null" && "true", true
+"null" || "true", null
+"null" + "false", nullfalse
+"null" - "false", NaN
+"null" * "false", NaN
+"null" / "false", NaN
+"null" == "false", false
+"null" % "false", NaN
+"null" && "false", false
+"null" || "false", null
+"null" + "null", nullnull
+"null" - "null", NaN
+"null" * "null", NaN
+"null" / "null", NaN
+"null" == "null", true
+"null" % "null", NaN
+"null" && "null", null
+"null" || "null", null
+"null" + "undefined", nullundefined
+"null" - "undefined", NaN
+"null" * "undefined", NaN
+"null" / "undefined", NaN
+"null" == "undefined", false
+"null" % "undefined", NaN
+"null" && "undefined", undefined
+"null" || "undefined", null
+"null" + "", null
+"null" - "", NaN
+"null" * "", NaN
+"null" / "", NaN
+"null" == "", false
+"null" % "", NaN
+"null" && "", 
+"null" || "", null
+"null" + "[Object object]", null[Object object]
+"null" - "[Object object]", NaN
+"null" * "[Object object]", NaN
+"null" / "[Object object]", NaN
+"null" == "[Object object]", false
+"null" % "[Object object]", NaN
+"null" && "[Object object]", [Object object]
+"null" || "[Object object]", null
+"null" + "{}", null{}
+"null" - "{}", NaN
+"null" * "{}", NaN
+"null" / "{}", NaN
+"null" == "{}", false
+"null" % "{}", NaN
+"null" && "{}", {}
+"null" || "{}", null
+"null" + "{a:3}", null{a:3}
+"null" - "{a:3}", NaN
+"null" * "{a:3}", NaN
+"null" / "{a:3}", NaN
+"null" == "{a:3}", false
+"null" % "{a:3}", NaN
+"null" && "{a:3}", {a:3}
+"null" || "{a:3}", null
+"null" + {}, null[object Object]
+"null" - {}, NaN
+"null" * {}, NaN
+"null" / {}, NaN
+"null" == {}, false
+"null" % {}, NaN
+"null" && {}, {}
+"null" || {}, null
+"null" + {1: 3}, null[object Object]
+"null" - {1: 3}, NaN
+"null" * {1: 3}, NaN
+"null" / {1: 3}, NaN
+"null" == {1: 3}, false
+"null" % {1: 3}, NaN
+"null" && {1: 3}, { '1': 3 }
+"null" || {1: 3}, null
+"null" + {0: 0}, null[object Object]
+"null" - {0: 0}, NaN
+"null" * {0: 0}, NaN
+"null" / {0: 0}, NaN
+"null" == {0: 0}, false
+"null" % {0: 0}, NaN
+"null" && {0: 0}, { '0': 0 }
+"null" || {0: 0}, null
+"null" + {null:undefined}, null[object Object]
+"null" - {null:undefined}, NaN
+"null" * {null:undefined}, NaN
+"null" / {null:undefined}, NaN
+"null" == {null:undefined}, false
+"null" % {null:undefined}, NaN
+"null" && {null:undefined}, { null: undefined }
+"null" || {null:undefined}, null
+"null" + {a: "b"}, null[object Object]
+"null" - {a: "b"}, NaN
+"null" * {a: "b"}, NaN
+"null" / {a: "b"}, NaN
+"null" == {a: "b"}, false
+"null" % {a: "b"}, NaN
+"null" && {a: "b"}, { a: 'b' }
+"null" || {a: "b"}, null
+"null" + {"": {}}, null[object Object]
+"null" - {"": {}}, NaN
+"null" * {"": {}}, NaN
+"null" / {"": {}}, NaN
+"null" == {"": {}}, false
+"null" % {"": {}}, NaN
+"null" && {"": {}}, { '': {} }
+"null" || {"": {}}, null
+"null" + null, nullnull
+"null" - null, NaN
+"null" * null, NaN
+"null" / null, NaN
+"null" == null, false
+"null" % null, NaN
+"null" && null, null
+"null" || null, null
+"null" + undefined, nullundefined
+"null" - undefined, NaN
+"null" * undefined, NaN
+"null" / undefined, NaN
+"null" == undefined, false
+"null" % undefined, NaN
+"null" && undefined, undefined
+"null" || undefined, null
+"null" + NaN, nullNaN
+"null" - NaN, NaN
+"null" * NaN, NaN
+"null" / NaN, NaN
+"null" == NaN, false
+"null" % NaN, NaN
+"null" && NaN, NaN
+"null" || NaN, null
+"undefined" + 1, undefined1
+"undefined" - 1, NaN
+"undefined" * 1, NaN
+"undefined" / 1, NaN
+"undefined" == 1, false
+"undefined" % 1, NaN
+"undefined" && 1, 1
+"undefined" || 1, undefined
+"undefined" + 0, undefined0
+"undefined" - 0, NaN
+"undefined" * 0, NaN
+"undefined" / 0, NaN
+"undefined" == 0, false
+"undefined" % 0, NaN
+"undefined" && 0, 0
+"undefined" || 0, undefined
+"undefined" + -11, undefined-11
+"undefined" - -11, NaN
+"undefined" * -11, NaN
+"undefined" / -11, NaN
+"undefined" == -11, false
+"undefined" % -11, NaN
+"undefined" && -11, -11
+"undefined" || -11, undefined
+"undefined" + 5.5, undefined5.5
+"undefined" - 5.5, NaN
+"undefined" * 5.5, NaN
+"undefined" / 5.5, NaN
+"undefined" == 5.5, false
+"undefined" % 5.5, NaN
+"undefined" && 5.5, 5.5
+"undefined" || 5.5, undefined
+"undefined" + 0.0, undefined0
+"undefined" - 0.0, NaN
+"undefined" * 0.0, NaN
+"undefined" / 0.0, NaN
+"undefined" == 0.0, false
+"undefined" % 0.0, NaN
+"undefined" && 0.0, 0
+"undefined" || 0.0, undefined
+"undefined" + true, undefinedtrue
+"undefined" - true, NaN
+"undefined" * true, NaN
+"undefined" / true, NaN
+"undefined" == true, false
+"undefined" % true, NaN
+"undefined" && true, true
+"undefined" || true, undefined
+"undefined" + false, undefinedfalse
+"undefined" - false, NaN
+"undefined" * false, NaN
+"undefined" / false, NaN
+"undefined" == false, false
+"undefined" % false, NaN
+"undefined" && false, false
+"undefined" || false, undefined
+"undefined" + "string", undefinedstring
+"undefined" - "string", NaN
+"undefined" * "string", NaN
+"undefined" / "string", NaN
+"undefined" == "string", false
+"undefined" % "string", NaN
+"undefined" && "string", string
+"undefined" || "string", undefined
+"undefined" + "true", undefinedtrue
+"undefined" - "true", NaN
+"undefined" * "true", NaN
+"undefined" / "true", NaN
+"undefined" == "true", false
+"undefined" % "true", NaN
+"undefined" && "true", true
+"undefined" || "true", undefined
+"undefined" + "false", undefinedfalse
+"undefined" - "false", NaN
+"undefined" * "false", NaN
+"undefined" / "false", NaN
+"undefined" == "false", false
+"undefined" % "false", NaN
+"undefined" && "false", false
+"undefined" || "false", undefined
+"undefined" + "null", undefinednull
+"undefined" - "null", NaN
+"undefined" * "null", NaN
+"undefined" / "null", NaN
+"undefined" == "null", false
+"undefined" % "null", NaN
+"undefined" && "null", null
+"undefined" || "null", undefined
+"undefined" + "undefined", undefinedundefined
+"undefined" - "undefined", NaN
+"undefined" * "undefined", NaN
+"undefined" / "undefined", NaN
+"undefined" == "undefined", true
+"undefined" % "undefined", NaN
+"undefined" && "undefined", undefined
+"undefined" || "undefined", undefined
+"undefined" + "", undefined
+"undefined" - "", NaN
+"undefined" * "", NaN
+"undefined" / "", NaN
+"undefined" == "", false
+"undefined" % "", NaN
+"undefined" && "", 
+"undefined" || "", undefined
+"undefined" + "[Object object]", undefined[Object object]
+"undefined" - "[Object object]", NaN
+"undefined" * "[Object object]", NaN
+"undefined" / "[Object object]", NaN
+"undefined" == "[Object object]", false
+"undefined" % "[Object object]", NaN
+"undefined" && "[Object object]", [Object object]
+"undefined" || "[Object object]", undefined
+"undefined" + "{}", undefined{}
+"undefined" - "{}", NaN
+"undefined" * "{}", NaN
+"undefined" / "{}", NaN
+"undefined" == "{}", false
+"undefined" % "{}", NaN
+"undefined" && "{}", {}
+"undefined" || "{}", undefined
+"undefined" + "{a:3}", undefined{a:3}
+"undefined" - "{a:3}", NaN
+"undefined" * "{a:3}", NaN
+"undefined" / "{a:3}", NaN
+"undefined" == "{a:3}", false
+"undefined" % "{a:3}", NaN
+"undefined" && "{a:3}", {a:3}
+"undefined" || "{a:3}", undefined
+"undefined" + {}, undefined[object Object]
+"undefined" - {}, NaN
+"undefined" * {}, NaN
+"undefined" / {}, NaN
+"undefined" == {}, false
+"undefined" % {}, NaN
+"undefined" && {}, {}
+"undefined" || {}, undefined
+"undefined" + {1: 3}, undefined[object Object]
+"undefined" - {1: 3}, NaN
+"undefined" * {1: 3}, NaN
+"undefined" / {1: 3}, NaN
+"undefined" == {1: 3}, false
+"undefined" % {1: 3}, NaN
+"undefined" && {1: 3}, { '1': 3 }
+"undefined" || {1: 3}, undefined
+"undefined" + {0: 0}, undefined[object Object]
+"undefined" - {0: 0}, NaN
+"undefined" * {0: 0}, NaN
+"undefined" / {0: 0}, NaN
+"undefined" == {0: 0}, false
+"undefined" % {0: 0}, NaN
+"undefined" && {0: 0}, { '0': 0 }
+"undefined" || {0: 0}, undefined
+"undefined" + {null:undefined}, undefined[object Object]
+"undefined" - {null:undefined}, NaN
+"undefined" * {null:undefined}, NaN
+"undefined" / {null:undefined}, NaN
+"undefined" == {null:undefined}, false
+"undefined" % {null:undefined}, NaN
+"undefined" && {null:undefined}, { null: undefined }
+"undefined" || {null:undefined}, undefined
+"undefined" + {a: "b"}, undefined[object Object]
+"undefined" - {a: "b"}, NaN
+"undefined" * {a: "b"}, NaN
+"undefined" / {a: "b"}, NaN
+"undefined" == {a: "b"}, false
+"undefined" % {a: "b"}, NaN
+"undefined" && {a: "b"}, { a: 'b' }
+"undefined" || {a: "b"}, undefined
+"undefined" + {"": {}}, undefined[object Object]
+"undefined" - {"": {}}, NaN
+"undefined" * {"": {}}, NaN
+"undefined" / {"": {}}, NaN
+"undefined" == {"": {}}, false
+"undefined" % {"": {}}, NaN
+"undefined" && {"": {}}, { '': {} }
+"undefined" || {"": {}}, undefined
+"undefined" + null, undefinednull
+"undefined" - null, NaN
+"undefined" * null, NaN
+"undefined" / null, NaN
+"undefined" == null, false
+"undefined" % null, NaN
+"undefined" && null, null
+"undefined" || null, undefined
+"undefined" + undefined, undefinedundefined
+"undefined" - undefined, NaN
+"undefined" * undefined, NaN
+"undefined" / undefined, NaN
+"undefined" == undefined, false
+"undefined" % undefined, NaN
+"undefined" && undefined, undefined
+"undefined" || undefined, undefined
+"undefined" + NaN, undefinedNaN
+"undefined" - NaN, NaN
+"undefined" * NaN, NaN
+"undefined" / NaN, NaN
+"undefined" == NaN, false
+"undefined" % NaN, NaN
+"undefined" && NaN, NaN
+"undefined" || NaN, undefined
+"" + 1, 1
+"" - 1, -1
+"" * 1, 0
+"" / 1, 0
+"" == 1, false
+"" % 1, 0
+"" && 1, 
+"" || 1, 1
+"" + 0, 0
+"" - 0, 0
+"" * 0, 0
+"" / 0, NaN
+"" == 0, true
+"" % 0, NaN
+"" && 0, 
+"" || 0, 0
+"" + -11, -11
+"" - -11, 11
+"" * -11, -0
+"" / -11, -0
+"" == -11, false
+"" % -11, 0
+"" && -11, 
+"" || -11, -11
+"" + 5.5, 5.5
+"" - 5.5, -5.5
+"" * 5.5, 0
+"" / 5.5, 0
+"" == 5.5, false
+"" % 5.5, 0
+"" && 5.5, 
+"" || 5.5, 5.5
+"" + 0.0, 0
+"" - 0.0, 0
+"" * 0.0, 0
+"" / 0.0, NaN
+"" == 0.0, true
+"" % 0.0, NaN
+"" && 0.0, 
+"" || 0.0, 0
+"" + true, true
+"" - true, -1
+"" * true, 0
+"" / true, 0
+"" == true, false
+"" % true, 0
+"" && true, 
+"" || true, true
+"" + false, false
+"" - false, 0
+"" * false, 0
+"" / false, NaN
+"" == false, true
+"" % false, NaN
+"" && false, 
+"" || false, false
+"" + "string", string
+"" - "string", NaN
+"" * "string", NaN
+"" / "string", NaN
+"" == "string", false
+"" % "string", NaN
+"" && "string", 
+"" || "string", string
+"" + "true", true
+"" - "true", NaN
+"" * "true", NaN
+"" / "true", NaN
+"" == "true", false
+"" % "true", NaN
+"" && "true", 
+"" || "true", true
+"" + "false", false
+"" - "false", NaN
+"" * "false", NaN
+"" / "false", NaN
+"" == "false", false
+"" % "false", NaN
+"" && "false", 
+"" || "false", false
+"" + "null", null
+"" - "null", NaN
+"" * "null", NaN
+"" / "null", NaN
+"" == "null", false
+"" % "null", NaN
+"" && "null", 
+"" || "null", null
+"" + "undefined", undefined
+"" - "undefined", NaN
+"" * "undefined", NaN
+"" / "undefined", NaN
+"" == "undefined", false
+"" % "undefined", NaN
+"" && "undefined", 
+"" || "undefined", undefined
+"" + "", 
+"" - "", 0
+"" * "", 0
+"" / "", NaN
+"" == "", true
+"" % "", NaN
+"" && "", 
+"" || "", 
+"" + "[Object object]", [Object object]
+"" - "[Object object]", NaN
+"" * "[Object object]", NaN
+"" / "[Object object]", NaN
+"" == "[Object object]", false
+"" % "[Object object]", NaN
+"" && "[Object object]", 
+"" || "[Object object]", [Object object]
+"" + "{}", {}
+"" - "{}", NaN
+"" * "{}", NaN
+"" / "{}", NaN
+"" == "{}", false
+"" % "{}", NaN
+"" && "{}", 
+"" || "{}", {}
+"" + "{a:3}", {a:3}
+"" - "{a:3}", NaN
+"" * "{a:3}", NaN
+"" / "{a:3}", NaN
+"" == "{a:3}", false
+"" % "{a:3}", NaN
+"" && "{a:3}", 
+"" || "{a:3}", {a:3}
+"" + {}, [object Object]
+"" - {}, NaN
+"" * {}, NaN
+"" / {}, NaN
+"" == {}, false
+"" % {}, NaN
+"" && {}, 
+"" || {}, {}
+"" + {1: 3}, [object Object]
+"" - {1: 3}, NaN
+"" * {1: 3}, NaN
+"" / {1: 3}, NaN
+"" == {1: 3}, false
+"" % {1: 3}, NaN
+"" && {1: 3}, 
+"" || {1: 3}, { '1': 3 }
+"" + {0: 0}, [object Object]
+"" - {0: 0}, NaN
+"" * {0: 0}, NaN
+"" / {0: 0}, NaN
+"" == {0: 0}, false
+"" % {0: 0}, NaN
+"" && {0: 0}, 
+"" || {0: 0}, { '0': 0 }
+"" + {null:undefined}, [object Object]
+"" - {null:undefined}, NaN
+"" * {null:undefined}, NaN
+"" / {null:undefined}, NaN
+"" == {null:undefined}, false
+"" % {null:undefined}, NaN
+"" && {null:undefined}, 
+"" || {null:undefined}, { null: undefined }
+"" + {a: "b"}, [object Object]
+"" - {a: "b"}, NaN
+"" * {a: "b"}, NaN
+"" / {a: "b"}, NaN
+"" == {a: "b"}, false
+"" % {a: "b"}, NaN
+"" && {a: "b"}, 
+"" || {a: "b"}, { a: 'b' }
+"" + {"": {}}, [object Object]
+"" - {"": {}}, NaN
+"" * {"": {}}, NaN
+"" / {"": {}}, NaN
+"" == {"": {}}, false
+"" % {"": {}}, NaN
+"" && {"": {}}, 
+"" || {"": {}}, { '': {} }
+"" + null, null
+"" - null, 0
+"" * null, 0
+"" / null, NaN
+"" == null, false
+"" % null, NaN
+"" && null, 
+"" || null, null
+"" + undefined, undefined
+"" - undefined, NaN
+"" * undefined, NaN
+"" / undefined, NaN
+"" == undefined, false
+"" % undefined, NaN
+"" && undefined, 
+"" || undefined, undefined
+"" + NaN, NaN
+"" - NaN, NaN
+"" * NaN, NaN
+"" / NaN, NaN
+"" == NaN, false
+"" % NaN, NaN
+"" && NaN, 
+"" || NaN, NaN
+"[Object object]" + 1, [Object object]1
+"[Object object]" - 1, NaN
+"[Object object]" * 1, NaN
+"[Object object]" / 1, NaN
+"[Object object]" == 1, false
+"[Object object]" % 1, NaN
+"[Object object]" && 1, 1
+"[Object object]" || 1, [Object object]
+"[Object object]" + 0, [Object object]0
+"[Object object]" - 0, NaN
+"[Object object]" * 0, NaN
+"[Object object]" / 0, NaN
+"[Object object]" == 0, false
+"[Object object]" % 0, NaN
+"[Object object]" && 0, 0
+"[Object object]" || 0, [Object object]
+"[Object object]" + -11, [Object object]-11
+"[Object object]" - -11, NaN
+"[Object object]" * -11, NaN
+"[Object object]" / -11, NaN
+"[Object object]" == -11, false
+"[Object object]" % -11, NaN
+"[Object object]" && -11, -11
+"[Object object]" || -11, [Object object]
+"[Object object]" + 5.5, [Object object]5.5
+"[Object object]" - 5.5, NaN
+"[Object object]" * 5.5, NaN
+"[Object object]" / 5.5, NaN
+"[Object object]" == 5.5, false
+"[Object object]" % 5.5, NaN
+"[Object object]" && 5.5, 5.5
+"[Object object]" || 5.5, [Object object]
+"[Object object]" + 0.0, [Object object]0
+"[Object object]" - 0.0, NaN
+"[Object object]" * 0.0, NaN
+"[Object object]" / 0.0, NaN
+"[Object object]" == 0.0, false
+"[Object object]" % 0.0, NaN
+"[Object object]" && 0.0, 0
+"[Object object]" || 0.0, [Object object]
+"[Object object]" + true, [Object object]true
+"[Object object]" - true, NaN
+"[Object object]" * true, NaN
+"[Object object]" / true, NaN
+"[Object object]" == true, false
+"[Object object]" % true, NaN
+"[Object object]" && true, true
+"[Object object]" || true, [Object object]
+"[Object object]" + false, [Object object]false
+"[Object object]" - false, NaN
+"[Object object]" * false, NaN
+"[Object object]" / false, NaN
+"[Object object]" == false, false
+"[Object object]" % false, NaN
+"[Object object]" && false, false
+"[Object object]" || false, [Object object]
+"[Object object]" + "string", [Object object]string
+"[Object object]" - "string", NaN
+"[Object object]" * "string", NaN
+"[Object object]" / "string", NaN
+"[Object object]" == "string", false
+"[Object object]" % "string", NaN
+"[Object object]" && "string", string
+"[Object object]" || "string", [Object object]
+"[Object object]" + "true", [Object object]true
+"[Object object]" - "true", NaN
+"[Object object]" * "true", NaN
+"[Object object]" / "true", NaN
+"[Object object]" == "true", false
+"[Object object]" % "true", NaN
+"[Object object]" && "true", true
+"[Object object]" || "true", [Object object]
+"[Object object]" + "false", [Object object]false
+"[Object object]" - "false", NaN
+"[Object object]" * "false", NaN
+"[Object object]" / "false", NaN
+"[Object object]" == "false", false
+"[Object object]" % "false", NaN
+"[Object object]" && "false", false
+"[Object object]" || "false", [Object object]
+"[Object object]" + "null", [Object object]null
+"[Object object]" - "null", NaN
+"[Object object]" * "null", NaN
+"[Object object]" / "null", NaN
+"[Object object]" == "null", false
+"[Object object]" % "null", NaN
+"[Object object]" && "null", null
+"[Object object]" || "null", [Object object]
+"[Object object]" + "undefined", [Object object]undefined
+"[Object object]" - "undefined", NaN
+"[Object object]" * "undefined", NaN
+"[Object object]" / "undefined", NaN
+"[Object object]" == "undefined", false
+"[Object object]" % "undefined", NaN
+"[Object object]" && "undefined", undefined
+"[Object object]" || "undefined", [Object object]
+"[Object object]" + "", [Object object]
+"[Object object]" - "", NaN
+"[Object object]" * "", NaN
+"[Object object]" / "", NaN
+"[Object object]" == "", false
+"[Object object]" % "", NaN
+"[Object object]" && "", 
+"[Object object]" || "", [Object object]
+"[Object object]" + "[Object object]", [Object object][Object object]
+"[Object object]" - "[Object object]", NaN
+"[Object object]" * "[Object object]", NaN
+"[Object object]" / "[Object object]", NaN
+"[Object object]" == "[Object object]", true
+"[Object object]" % "[Object object]", NaN
+"[Object object]" && "[Object object]", [Object object]
+"[Object object]" || "[Object object]", [Object object]
+"[Object object]" + "{}", [Object object]{}
+"[Object object]" - "{}", NaN
+"[Object object]" * "{}", NaN
+"[Object object]" / "{}", NaN
+"[Object object]" == "{}", false
+"[Object object]" % "{}", NaN
+"[Object object]" && "{}", {}
+"[Object object]" || "{}", [Object object]
+"[Object object]" + "{a:3}", [Object object]{a:3}
+"[Object object]" - "{a:3}", NaN
+"[Object object]" * "{a:3}", NaN
+"[Object object]" / "{a:3}", NaN
+"[Object object]" == "{a:3}", false
+"[Object object]" % "{a:3}", NaN
+"[Object object]" && "{a:3}", {a:3}
+"[Object object]" || "{a:3}", [Object object]
+"[Object object]" + {}, [Object object][object Object]
+"[Object object]" - {}, NaN
+"[Object object]" * {}, NaN
+"[Object object]" / {}, NaN
+"[Object object]" == {}, false
+"[Object object]" % {}, NaN
+"[Object object]" && {}, {}
+"[Object object]" || {}, [Object object]
+"[Object object]" + {1: 3}, [Object object][object Object]
+"[Object object]" - {1: 3}, NaN
+"[Object object]" * {1: 3}, NaN
+"[Object object]" / {1: 3}, NaN
+"[Object object]" == {1: 3}, false
+"[Object object]" % {1: 3}, NaN
+"[Object object]" && {1: 3}, { '1': 3 }
+"[Object object]" || {1: 3}, [Object object]
+"[Object object]" + {0: 0}, [Object object][object Object]
+"[Object object]" - {0: 0}, NaN
+"[Object object]" * {0: 0}, NaN
+"[Object object]" / {0: 0}, NaN
+"[Object object]" == {0: 0}, false
+"[Object object]" % {0: 0}, NaN
+"[Object object]" && {0: 0}, { '0': 0 }
+"[Object object]" || {0: 0}, [Object object]
+"[Object object]" + {null:undefined}, [Object object][object Object]
+"[Object object]" - {null:undefined}, NaN
+"[Object object]" * {null:undefined}, NaN
+"[Object object]" / {null:undefined}, NaN
+"[Object object]" == {null:undefined}, false
+"[Object object]" % {null:undefined}, NaN
+"[Object object]" && {null:undefined}, { null: undefined }
+"[Object object]" || {null:undefined}, [Object object]
+"[Object object]" + {a: "b"}, [Object object][object Object]
+"[Object object]" - {a: "b"}, NaN
+"[Object object]" * {a: "b"}, NaN
+"[Object object]" / {a: "b"}, NaN
+"[Object object]" == {a: "b"}, false
+"[Object object]" % {a: "b"}, NaN
+"[Object object]" && {a: "b"}, { a: 'b' }
+"[Object object]" || {a: "b"}, [Object object]
+"[Object object]" + {"": {}}, [Object object][object Object]
+"[Object object]" - {"": {}}, NaN
+"[Object object]" * {"": {}}, NaN
+"[Object object]" / {"": {}}, NaN
+"[Object object]" == {"": {}}, false
+"[Object object]" % {"": {}}, NaN
+"[Object object]" && {"": {}}, { '': {} }
+"[Object object]" || {"": {}}, [Object object]
+"[Object object]" + null, [Object object]null
+"[Object object]" - null, NaN
+"[Object object]" * null, NaN
+"[Object object]" / null, NaN
+"[Object object]" == null, false
+"[Object object]" % null, NaN
+"[Object object]" && null, null
+"[Object object]" || null, [Object object]
+"[Object object]" + undefined, [Object object]undefined
+"[Object object]" - undefined, NaN
+"[Object object]" * undefined, NaN
+"[Object object]" / undefined, NaN
+"[Object object]" == undefined, false
+"[Object object]" % undefined, NaN
+"[Object object]" && undefined, undefined
+"[Object object]" || undefined, [Object object]
+"[Object object]" + NaN, [Object object]NaN
+"[Object object]" - NaN, NaN
+"[Object object]" * NaN, NaN
+"[Object object]" / NaN, NaN
+"[Object object]" == NaN, false
+"[Object object]" % NaN, NaN
+"[Object object]" && NaN, NaN
+"[Object object]" || NaN, [Object object]
+"{}" + 1, {}1
+"{}" - 1, NaN
+"{}" * 1, NaN
+"{}" / 1, NaN
+"{}" == 1, false
+"{}" % 1, NaN
+"{}" && 1, 1
+"{}" || 1, {}
+"{}" + 0, {}0
+"{}" - 0, NaN
+"{}" * 0, NaN
+"{}" / 0, NaN
+"{}" == 0, false
+"{}" % 0, NaN
+"{}" && 0, 0
+"{}" || 0, {}
+"{}" + -11, {}-11
+"{}" - -11, NaN
+"{}" * -11, NaN
+"{}" / -11, NaN
+"{}" == -11, false
+"{}" % -11, NaN
+"{}" && -11, -11
+"{}" || -11, {}
+"{}" + 5.5, {}5.5
+"{}" - 5.5, NaN
+"{}" * 5.5, NaN
+"{}" / 5.5, NaN
+"{}" == 5.5, false
+"{}" % 5.5, NaN
+"{}" && 5.5, 5.5
+"{}" || 5.5, {}
+"{}" + 0.0, {}0
+"{}" - 0.0, NaN
+"{}" * 0.0, NaN
+"{}" / 0.0, NaN
+"{}" == 0.0, false
+"{}" % 0.0, NaN
+"{}" && 0.0, 0
+"{}" || 0.0, {}
+"{}" + true, {}true
+"{}" - true, NaN
+"{}" * true, NaN
+"{}" / true, NaN
+"{}" == true, false
+"{}" % true, NaN
+"{}" && true, true
+"{}" || true, {}
+"{}" + false, {}false
+"{}" - false, NaN
+"{}" * false, NaN
+"{}" / false, NaN
+"{}" == false, false
+"{}" % false, NaN
+"{}" && false, false
+"{}" || false, {}
+"{}" + "string", {}string
+"{}" - "string", NaN
+"{}" * "string", NaN
+"{}" / "string", NaN
+"{}" == "string", false
+"{}" % "string", NaN
+"{}" && "string", string
+"{}" || "string", {}
+"{}" + "true", {}true
+"{}" - "true", NaN
+"{}" * "true", NaN
+"{}" / "true", NaN
+"{}" == "true", false
+"{}" % "true", NaN
+"{}" && "true", true
+"{}" || "true", {}
+"{}" + "false", {}false
+"{}" - "false", NaN
+"{}" * "false", NaN
+"{}" / "false", NaN
+"{}" == "false", false
+"{}" % "false", NaN
+"{}" && "false", false
+"{}" || "false", {}
+"{}" + "null", {}null
+"{}" - "null", NaN
+"{}" * "null", NaN
+"{}" / "null", NaN
+"{}" == "null", false
+"{}" % "null", NaN
+"{}" && "null", null
+"{}" || "null", {}
+"{}" + "undefined", {}undefined
+"{}" - "undefined", NaN
+"{}" * "undefined", NaN
+"{}" / "undefined", NaN
+"{}" == "undefined", false
+"{}" % "undefined", NaN
+"{}" && "undefined", undefined
+"{}" || "undefined", {}
+"{}" + "", {}
+"{}" - "", NaN
+"{}" * "", NaN
+"{}" / "", NaN
+"{}" == "", false
+"{}" % "", NaN
+"{}" && "", 
+"{}" || "", {}
+"{}" + "[Object object]", {}[Object object]
+"{}" - "[Object object]", NaN
+"{}" * "[Object object]", NaN
+"{}" / "[Object object]", NaN
+"{}" == "[Object object]", false
+"{}" % "[Object object]", NaN
+"{}" && "[Object object]", [Object object]
+"{}" || "[Object object]", {}
+"{}" + "{}", {}{}
+"{}" - "{}", NaN
+"{}" * "{}", NaN
+"{}" / "{}", NaN
+"{}" == "{}", true
+"{}" % "{}", NaN
+"{}" && "{}", {}
+"{}" || "{}", {}
+"{}" + "{a:3}", {}{a:3}
+"{}" - "{a:3}", NaN
+"{}" * "{a:3}", NaN
+"{}" / "{a:3}", NaN
+"{}" == "{a:3}", false
+"{}" % "{a:3}", NaN
+"{}" && "{a:3}", {a:3}
+"{}" || "{a:3}", {}
+"{}" + {}, {}[object Object]
+"{}" - {}, NaN
+"{}" * {}, NaN
+"{}" / {}, NaN
+"{}" == {}, false
+"{}" % {}, NaN
+"{}" && {}, {}
+"{}" || {}, {}
+"{}" + {1: 3}, {}[object Object]
+"{}" - {1: 3}, NaN
+"{}" * {1: 3}, NaN
+"{}" / {1: 3}, NaN
+"{}" == {1: 3}, false
+"{}" % {1: 3}, NaN
+"{}" && {1: 3}, { '1': 3 }
+"{}" || {1: 3}, {}
+"{}" + {0: 0}, {}[object Object]
+"{}" - {0: 0}, NaN
+"{}" * {0: 0}, NaN
+"{}" / {0: 0}, NaN
+"{}" == {0: 0}, false
+"{}" % {0: 0}, NaN
+"{}" && {0: 0}, { '0': 0 }
+"{}" || {0: 0}, {}
+"{}" + {null:undefined}, {}[object Object]
+"{}" - {null:undefined}, NaN
+"{}" * {null:undefined}, NaN
+"{}" / {null:undefined}, NaN
+"{}" == {null:undefined}, false
+"{}" % {null:undefined}, NaN
+"{}" && {null:undefined}, { null: undefined }
+"{}" || {null:undefined}, {}
+"{}" + {a: "b"}, {}[object Object]
+"{}" - {a: "b"}, NaN
+"{}" * {a: "b"}, NaN
+"{}" / {a: "b"}, NaN
+"{}" == {a: "b"}, false
+"{}" % {a: "b"}, NaN
+"{}" && {a: "b"}, { a: 'b' }
+"{}" || {a: "b"}, {}
+"{}" + {"": {}}, {}[object Object]
+"{}" - {"": {}}, NaN
+"{}" * {"": {}}, NaN
+"{}" / {"": {}}, NaN
+"{}" == {"": {}}, false
+"{}" % {"": {}}, NaN
+"{}" && {"": {}}, { '': {} }
+"{}" || {"": {}}, {}
+"{}" + null, {}null
+"{}" - null, NaN
+"{}" * null, NaN
+"{}" / null, NaN
+"{}" == null, false
+"{}" % null, NaN
+"{}" && null, null
+"{}" || null, {}
+"{}" + undefined, {}undefined
+"{}" - undefined, NaN
+"{}" * undefined, NaN
+"{}" / undefined, NaN
+"{}" == undefined, false
+"{}" % undefined, NaN
+"{}" && undefined, undefined
+"{}" || undefined, {}
+"{}" + NaN, {}NaN
+"{}" - NaN, NaN
+"{}" * NaN, NaN
+"{}" / NaN, NaN
+"{}" == NaN, false
+"{}" % NaN, NaN
+"{}" && NaN, NaN
+"{}" || NaN, {}
+"{a:3}" + 1, {a:3}1
+"{a:3}" - 1, NaN
+"{a:3}" * 1, NaN
+"{a:3}" / 1, NaN
+"{a:3}" == 1, false
+"{a:3}" % 1, NaN
+"{a:3}" && 1, 1
+"{a:3}" || 1, {a:3}
+"{a:3}" + 0, {a:3}0
+"{a:3}" - 0, NaN
+"{a:3}" * 0, NaN
+"{a:3}" / 0, NaN
+"{a:3}" == 0, false
+"{a:3}" % 0, NaN
+"{a:3}" && 0, 0
+"{a:3}" || 0, {a:3}
+"{a:3}" + -11, {a:3}-11
+"{a:3}" - -11, NaN
+"{a:3}" * -11, NaN
+"{a:3}" / -11, NaN
+"{a:3}" == -11, false
+"{a:3}" % -11, NaN
+"{a:3}" && -11, -11
+"{a:3}" || -11, {a:3}
+"{a:3}" + 5.5, {a:3}5.5
+"{a:3}" - 5.5, NaN
+"{a:3}" * 5.5, NaN
+"{a:3}" / 5.5, NaN
+"{a:3}" == 5.5, false
+"{a:3}" % 5.5, NaN
+"{a:3}" && 5.5, 5.5
+"{a:3}" || 5.5, {a:3}
+"{a:3}" + 0.0, {a:3}0
+"{a:3}" - 0.0, NaN
+"{a:3}" * 0.0, NaN
+"{a:3}" / 0.0, NaN
+"{a:3}" == 0.0, false
+"{a:3}" % 0.0, NaN
+"{a:3}" && 0.0, 0
+"{a:3}" || 0.0, {a:3}
+"{a:3}" + true, {a:3}true
+"{a:3}" - true, NaN
+"{a:3}" * true, NaN
+"{a:3}" / true, NaN
+"{a:3}" == true, false
+"{a:3}" % true, NaN
+"{a:3}" && true, true
+"{a:3}" || true, {a:3}
+"{a:3}" + false, {a:3}false
+"{a:3}" - false, NaN
+"{a:3}" * false, NaN
+"{a:3}" / false, NaN
+"{a:3}" == false, false
+"{a:3}" % false, NaN
+"{a:3}" && false, false
+"{a:3}" || false, {a:3}
+"{a:3}" + "string", {a:3}string
+"{a:3}" - "string", NaN
+"{a:3}" * "string", NaN
+"{a:3}" / "string", NaN
+"{a:3}" == "string", false
+"{a:3}" % "string", NaN
+"{a:3}" && "string", string
+"{a:3}" || "string", {a:3}
+"{a:3}" + "true", {a:3}true
+"{a:3}" - "true", NaN
+"{a:3}" * "true", NaN
+"{a:3}" / "true", NaN
+"{a:3}" == "true", false
+"{a:3}" % "true", NaN
+"{a:3}" && "true", true
+"{a:3}" || "true", {a:3}
+"{a:3}" + "false", {a:3}false
+"{a:3}" - "false", NaN
+"{a:3}" * "false", NaN
+"{a:3}" / "false", NaN
+"{a:3}" == "false", false
+"{a:3}" % "false", NaN
+"{a:3}" && "false", false
+"{a:3}" || "false", {a:3}
+"{a:3}" + "null", {a:3}null
+"{a:3}" - "null", NaN
+"{a:3}" * "null", NaN
+"{a:3}" / "null", NaN
+"{a:3}" == "null", false
+"{a:3}" % "null", NaN
+"{a:3}" && "null", null
+"{a:3}" || "null", {a:3}
+"{a:3}" + "undefined", {a:3}undefined
+"{a:3}" - "undefined", NaN
+"{a:3}" * "undefined", NaN
+"{a:3}" / "undefined", NaN
+"{a:3}" == "undefined", false
+"{a:3}" % "undefined", NaN
+"{a:3}" && "undefined", undefined
+"{a:3}" || "undefined", {a:3}
+"{a:3}" + "", {a:3}
+"{a:3}" - "", NaN
+"{a:3}" * "", NaN
+"{a:3}" / "", NaN
+"{a:3}" == "", false
+"{a:3}" % "", NaN
+"{a:3}" && "", 
+"{a:3}" || "", {a:3}
+"{a:3}" + "[Object object]", {a:3}[Object object]
+"{a:3}" - "[Object object]", NaN
+"{a:3}" * "[Object object]", NaN
+"{a:3}" / "[Object object]", NaN
+"{a:3}" == "[Object object]", false
+"{a:3}" % "[Object object]", NaN
+"{a:3}" && "[Object object]", [Object object]
+"{a:3}" || "[Object object]", {a:3}
+"{a:3}" + "{}", {a:3}{}
+"{a:3}" - "{}", NaN
+"{a:3}" * "{}", NaN
+"{a:3}" / "{}", NaN
+"{a:3}" == "{}", false
+"{a:3}" % "{}", NaN
+"{a:3}" && "{}", {}
+"{a:3}" || "{}", {a:3}
+"{a:3}" + "{a:3}", {a:3}{a:3}
+"{a:3}" - "{a:3}", NaN
+"{a:3}" * "{a:3}", NaN
+"{a:3}" / "{a:3}", NaN
+"{a:3}" == "{a:3}", true
+"{a:3}" % "{a:3}", NaN
+"{a:3}" && "{a:3}", {a:3}
+"{a:3}" || "{a:3}", {a:3}
+"{a:3}" + {}, {a:3}[object Object]
+"{a:3}" - {}, NaN
+"{a:3}" * {}, NaN
+"{a:3}" / {}, NaN
+"{a:3}" == {}, false
+"{a:3}" % {}, NaN
+"{a:3}" && {}, {}
+"{a:3}" || {}, {a:3}
+"{a:3}" + {1: 3}, {a:3}[object Object]
+"{a:3}" - {1: 3}, NaN
+"{a:3}" * {1: 3}, NaN
+"{a:3}" / {1: 3}, NaN
+"{a:3}" == {1: 3}, false
+"{a:3}" % {1: 3}, NaN
+"{a:3}" && {1: 3}, { '1': 3 }
+"{a:3}" || {1: 3}, {a:3}
+"{a:3}" + {0: 0}, {a:3}[object Object]
+"{a:3}" - {0: 0}, NaN
+"{a:3}" * {0: 0}, NaN
+"{a:3}" / {0: 0}, NaN
+"{a:3}" == {0: 0}, false
+"{a:3}" % {0: 0}, NaN
+"{a:3}" && {0: 0}, { '0': 0 }
+"{a:3}" || {0: 0}, {a:3}
+"{a:3}" + {null:undefined}, {a:3}[object Object]
+"{a:3}" - {null:undefined}, NaN
+"{a:3}" * {null:undefined}, NaN
+"{a:3}" / {null:undefined}, NaN
+"{a:3}" == {null:undefined}, false
+"{a:3}" % {null:undefined}, NaN
+"{a:3}" && {null:undefined}, { null: undefined }
+"{a:3}" || {null:undefined}, {a:3}
+"{a:3}" + {a: "b"}, {a:3}[object Object]
+"{a:3}" - {a: "b"}, NaN
+"{a:3}" * {a: "b"}, NaN
+"{a:3}" / {a: "b"}, NaN
+"{a:3}" == {a: "b"}, false
+"{a:3}" % {a: "b"}, NaN
+"{a:3}" && {a: "b"}, { a: 'b' }
+"{a:3}" || {a: "b"}, {a:3}
+"{a:3}" + {"": {}}, {a:3}[object Object]
+"{a:3}" - {"": {}}, NaN
+"{a:3}" * {"": {}}, NaN
+"{a:3}" / {"": {}}, NaN
+"{a:3}" == {"": {}}, false
+"{a:3}" % {"": {}}, NaN
+"{a:3}" && {"": {}}, { '': {} }
+"{a:3}" || {"": {}}, {a:3}
+"{a:3}" + null, {a:3}null
+"{a:3}" - null, NaN
+"{a:3}" * null, NaN
+"{a:3}" / null, NaN
+"{a:3}" == null, false
+"{a:3}" % null, NaN
+"{a:3}" && null, null
+"{a:3}" || null, {a:3}
+"{a:3}" + undefined, {a:3}undefined
+"{a:3}" - undefined, NaN
+"{a:3}" * undefined, NaN
+"{a:3}" / undefined, NaN
+"{a:3}" == undefined, false
+"{a:3}" % undefined, NaN
+"{a:3}" && undefined, undefined
+"{a:3}" || undefined, {a:3}
+"{a:3}" + NaN, {a:3}NaN
+"{a:3}" - NaN, NaN
+"{a:3}" * NaN, NaN
+"{a:3}" / NaN, NaN
+"{a:3}" == NaN, false
+"{a:3}" % NaN, NaN
+"{a:3}" && NaN, NaN
+"{a:3}" || NaN, {a:3}
+{} + 1, [object Object]1
+{} - 1, NaN
+{} * 1, NaN
+{} / 1, NaN
+{} == 1, false
+{} % 1, NaN
+{} && 1, 1
+{} || 1, {}
+{} + 0, [object Object]0
+{} - 0, NaN
+{} * 0, NaN
+{} / 0, NaN
+{} == 0, false
+{} % 0, NaN
+{} && 0, 0
+{} || 0, {}
+{} + -11, [object Object]-11
+{} - -11, NaN
+{} * -11, NaN
+{} / -11, NaN
+{} == -11, false
+{} % -11, NaN
+{} && -11, -11
+{} || -11, {}
+{} + 5.5, [object Object]5.5
+{} - 5.5, NaN
+{} * 5.5, NaN
+{} / 5.5, NaN
+{} == 5.5, false
+{} % 5.5, NaN
+{} && 5.5, 5.5
+{} || 5.5, {}
+{} + 0.0, [object Object]0
+{} - 0.0, NaN
+{} * 0.0, NaN
+{} / 0.0, NaN
+{} == 0.0, false
+{} % 0.0, NaN
+{} && 0.0, 0
+{} || 0.0, {}
+{} + true, [object Object]true
+{} - true, NaN
+{} * true, NaN
+{} / true, NaN
+{} == true, false
+{} % true, NaN
+{} && true, true
+{} || true, {}
+{} + false, [object Object]false
+{} - false, NaN
+{} * false, NaN
+{} / false, NaN
+{} == false, false
+{} % false, NaN
+{} && false, false
+{} || false, {}
+{} + "string", [object Object]string
+{} - "string", NaN
+{} * "string", NaN
+{} / "string", NaN
+{} == "string", false
+{} % "string", NaN
+{} && "string", string
+{} || "string", {}
+{} + "true", [object Object]true
+{} - "true", NaN
+{} * "true", NaN
+{} / "true", NaN
+{} == "true", false
+{} % "true", NaN
+{} && "true", true
+{} || "true", {}
+{} + "false", [object Object]false
+{} - "false", NaN
+{} * "false", NaN
+{} / "false", NaN
+{} == "false", false
+{} % "false", NaN
+{} && "false", false
+{} || "false", {}
+{} + "null", [object Object]null
+{} - "null", NaN
+{} * "null", NaN
+{} / "null", NaN
+{} == "null", false
+{} % "null", NaN
+{} && "null", null
+{} || "null", {}
+{} + "undefined", [object Object]undefined
+{} - "undefined", NaN
+{} * "undefined", NaN
+{} / "undefined", NaN
+{} == "undefined", false
+{} % "undefined", NaN
+{} && "undefined", undefined
+{} || "undefined", {}
+{} + "", [object Object]
+{} - "", NaN
+{} * "", NaN
+{} / "", NaN
+{} == "", false
+{} % "", NaN
+{} && "", 
+{} || "", {}
+{} + "[Object object]", [object Object][Object object]
+{} - "[Object object]", NaN
+{} * "[Object object]", NaN
+{} / "[Object object]", NaN
+{} == "[Object object]", false
+{} % "[Object object]", NaN
+{} && "[Object object]", [Object object]
+{} || "[Object object]", {}
+{} + "{}", [object Object]{}
+{} - "{}", NaN
+{} * "{}", NaN
+{} / "{}", NaN
+{} == "{}", false
+{} % "{}", NaN
+{} && "{}", {}
+{} || "{}", {}
+{} + "{a:3}", [object Object]{a:3}
+{} - "{a:3}", NaN
+{} * "{a:3}", NaN
+{} / "{a:3}", NaN
+{} == "{a:3}", false
+{} % "{a:3}", NaN
+{} && "{a:3}", {a:3}
+{} || "{a:3}", {}
+{} + {}, [object Object][object Object]
+{} - {}, NaN
+{} * {}, NaN
+{} / {}, NaN
+{} == {}, false
+{} % {}, NaN
+{} && {}, {}
+{} || {}, {}
+{} + {1: 3}, [object Object][object Object]
+{} - {1: 3}, NaN
+{} * {1: 3}, NaN
+{} / {1: 3}, NaN
+{} == {1: 3}, false
+{} % {1: 3}, NaN
+{} && {1: 3}, { '1': 3 }
+{} || {1: 3}, {}
+{} + {0: 0}, [object Object][object Object]
+{} - {0: 0}, NaN
+{} * {0: 0}, NaN
+{} / {0: 0}, NaN
+{} == {0: 0}, false
+{} % {0: 0}, NaN
+{} && {0: 0}, { '0': 0 }
+{} || {0: 0}, {}
+{} + {null:undefined}, [object Object][object Object]
+{} - {null:undefined}, NaN
+{} * {null:undefined}, NaN
+{} / {null:undefined}, NaN
+{} == {null:undefined}, false
+{} % {null:undefined}, NaN
+{} && {null:undefined}, { null: undefined }
+{} || {null:undefined}, {}
+{} + {a: "b"}, [object Object][object Object]
+{} - {a: "b"}, NaN
+{} * {a: "b"}, NaN
+{} / {a: "b"}, NaN
+{} == {a: "b"}, false
+{} % {a: "b"}, NaN
+{} && {a: "b"}, { a: 'b' }
+{} || {a: "b"}, {}
+{} + {"": {}}, [object Object][object Object]
+{} - {"": {}}, NaN
+{} * {"": {}}, NaN
+{} / {"": {}}, NaN
+{} == {"": {}}, false
+{} % {"": {}}, NaN
+{} && {"": {}}, { '': {} }
+{} || {"": {}}, {}
+{} + null, [object Object]null
+{} - null, NaN
+{} * null, NaN
+{} / null, NaN
+{} == null, false
+{} % null, NaN
+{} && null, null
+{} || null, {}
+{} + undefined, [object Object]undefined
+{} - undefined, NaN
+{} * undefined, NaN
+{} / undefined, NaN
+{} == undefined, false
+{} % undefined, NaN
+{} && undefined, undefined
+{} || undefined, {}
+{} + NaN, [object Object]NaN
+{} - NaN, NaN
+{} * NaN, NaN
+{} / NaN, NaN
+{} == NaN, false
+{} % NaN, NaN
+{} && NaN, NaN
+{} || NaN, {}
+{1: 3} + 1, [object Object]1
+{1: 3} - 1, NaN
+{1: 3} * 1, NaN
+{1: 3} / 1, NaN
+{1: 3} == 1, false
+{1: 3} % 1, NaN
+{1: 3} && 1, 1
+{1: 3} || 1, { '1': 3 }
+{1: 3} + 0, [object Object]0
+{1: 3} - 0, NaN
+{1: 3} * 0, NaN
+{1: 3} / 0, NaN
+{1: 3} == 0, false
+{1: 3} % 0, NaN
+{1: 3} && 0, 0
+{1: 3} || 0, { '1': 3 }
+{1: 3} + -11, [object Object]-11
+{1: 3} - -11, NaN
+{1: 3} * -11, NaN
+{1: 3} / -11, NaN
+{1: 3} == -11, false
+{1: 3} % -11, NaN
+{1: 3} && -11, -11
+{1: 3} || -11, { '1': 3 }
+{1: 3} + 5.5, [object Object]5.5
+{1: 3} - 5.5, NaN
+{1: 3} * 5.5, NaN
+{1: 3} / 5.5, NaN
+{1: 3} == 5.5, false
+{1: 3} % 5.5, NaN
+{1: 3} && 5.5, 5.5
+{1: 3} || 5.5, { '1': 3 }
+{1: 3} + 0.0, [object Object]0
+{1: 3} - 0.0, NaN
+{1: 3} * 0.0, NaN
+{1: 3} / 0.0, NaN
+{1: 3} == 0.0, false
+{1: 3} % 0.0, NaN
+{1: 3} && 0.0, 0
+{1: 3} || 0.0, { '1': 3 }
+{1: 3} + true, [object Object]true
+{1: 3} - true, NaN
+{1: 3} * true, NaN
+{1: 3} / true, NaN
+{1: 3} == true, false
+{1: 3} % true, NaN
+{1: 3} && true, true
+{1: 3} || true, { '1': 3 }
+{1: 3} + false, [object Object]false
+{1: 3} - false, NaN
+{1: 3} * false, NaN
+{1: 3} / false, NaN
+{1: 3} == false, false
+{1: 3} % false, NaN
+{1: 3} && false, false
+{1: 3} || false, { '1': 3 }
+{1: 3} + "string", [object Object]string
+{1: 3} - "string", NaN
+{1: 3} * "string", NaN
+{1: 3} / "string", NaN
+{1: 3} == "string", false
+{1: 3} % "string", NaN
+{1: 3} && "string", string
+{1: 3} || "string", { '1': 3 }
+{1: 3} + "true", [object Object]true
+{1: 3} - "true", NaN
+{1: 3} * "true", NaN
+{1: 3} / "true", NaN
+{1: 3} == "true", false
+{1: 3} % "true", NaN
+{1: 3} && "true", true
+{1: 3} || "true", { '1': 3 }
+{1: 3} + "false", [object Object]false
+{1: 3} - "false", NaN
+{1: 3} * "false", NaN
+{1: 3} / "false", NaN
+{1: 3} == "false", false
+{1: 3} % "false", NaN
+{1: 3} && "false", false
+{1: 3} || "false", { '1': 3 }
+{1: 3} + "null", [object Object]null
+{1: 3} - "null", NaN
+{1: 3} * "null", NaN
+{1: 3} / "null", NaN
+{1: 3} == "null", false
+{1: 3} % "null", NaN
+{1: 3} && "null", null
+{1: 3} || "null", { '1': 3 }
+{1: 3} + "undefined", [object Object]undefined
+{1: 3} - "undefined", NaN
+{1: 3} * "undefined", NaN
+{1: 3} / "undefined", NaN
+{1: 3} == "undefined", false
+{1: 3} % "undefined", NaN
+{1: 3} && "undefined", undefined
+{1: 3} || "undefined", { '1': 3 }
+{1: 3} + "", [object Object]
+{1: 3} - "", NaN
+{1: 3} * "", NaN
+{1: 3} / "", NaN
+{1: 3} == "", false
+{1: 3} % "", NaN
+{1: 3} && "", 
+{1: 3} || "", { '1': 3 }
+{1: 3} + "[Object object]", [object Object][Object object]
+{1: 3} - "[Object object]", NaN
+{1: 3} * "[Object object]", NaN
+{1: 3} / "[Object object]", NaN
+{1: 3} == "[Object object]", false
+{1: 3} % "[Object object]", NaN
+{1: 3} && "[Object object]", [Object object]
+{1: 3} || "[Object object]", { '1': 3 }
+{1: 3} + "{}", [object Object]{}
+{1: 3} - "{}", NaN
+{1: 3} * "{}", NaN
+{1: 3} / "{}", NaN
+{1: 3} == "{}", false
+{1: 3} % "{}", NaN
+{1: 3} && "{}", {}
+{1: 3} || "{}", { '1': 3 }
+{1: 3} + "{a:3}", [object Object]{a:3}
+{1: 3} - "{a:3}", NaN
+{1: 3} * "{a:3}", NaN
+{1: 3} / "{a:3}", NaN
+{1: 3} == "{a:3}", false
+{1: 3} % "{a:3}", NaN
+{1: 3} && "{a:3}", {a:3}
+{1: 3} || "{a:3}", { '1': 3 }
+{1: 3} + {}, [object Object][object Object]
+{1: 3} - {}, NaN
+{1: 3} * {}, NaN
+{1: 3} / {}, NaN
+{1: 3} == {}, false
+{1: 3} % {}, NaN
+{1: 3} && {}, {}
+{1: 3} || {}, { '1': 3 }
+{1: 3} + {1: 3}, [object Object][object Object]
+{1: 3} - {1: 3}, NaN
+{1: 3} * {1: 3}, NaN
+{1: 3} / {1: 3}, NaN
+{1: 3} == {1: 3}, false
+{1: 3} % {1: 3}, NaN
+{1: 3} && {1: 3}, { '1': 3 }
+{1: 3} || {1: 3}, { '1': 3 }
+{1: 3} + {0: 0}, [object Object][object Object]
+{1: 3} - {0: 0}, NaN
+{1: 3} * {0: 0}, NaN
+{1: 3} / {0: 0}, NaN
+{1: 3} == {0: 0}, false
+{1: 3} % {0: 0}, NaN
+{1: 3} && {0: 0}, { '0': 0 }
+{1: 3} || {0: 0}, { '1': 3 }
+{1: 3} + {null:undefined}, [object Object][object Object]
+{1: 3} - {null:undefined}, NaN
+{1: 3} * {null:undefined}, NaN
+{1: 3} / {null:undefined}, NaN
+{1: 3} == {null:undefined}, false
+{1: 3} % {null:undefined}, NaN
+{1: 3} && {null:undefined}, { null: undefined }
+{1: 3} || {null:undefined}, { '1': 3 }
+{1: 3} + {a: "b"}, [object Object][object Object]
+{1: 3} - {a: "b"}, NaN
+{1: 3} * {a: "b"}, NaN
+{1: 3} / {a: "b"}, NaN
+{1: 3} == {a: "b"}, false
+{1: 3} % {a: "b"}, NaN
+{1: 3} && {a: "b"}, { a: 'b' }
+{1: 3} || {a: "b"}, { '1': 3 }
+{1: 3} + {"": {}}, [object Object][object Object]
+{1: 3} - {"": {}}, NaN
+{1: 3} * {"": {}}, NaN
+{1: 3} / {"": {}}, NaN
+{1: 3} == {"": {}}, false
+{1: 3} % {"": {}}, NaN
+{1: 3} && {"": {}}, { '': {} }
+{1: 3} || {"": {}}, { '1': 3 }
+{1: 3} + null, [object Object]null
+{1: 3} - null, NaN
+{1: 3} * null, NaN
+{1: 3} / null, NaN
+{1: 3} == null, false
+{1: 3} % null, NaN
+{1: 3} && null, null
+{1: 3} || null, { '1': 3 }
+{1: 3} + undefined, [object Object]undefined
+{1: 3} - undefined, NaN
+{1: 3} * undefined, NaN
+{1: 3} / undefined, NaN
+{1: 3} == undefined, false
+{1: 3} % undefined, NaN
+{1: 3} && undefined, undefined
+{1: 3} || undefined, { '1': 3 }
+{1: 3} + NaN, [object Object]NaN
+{1: 3} - NaN, NaN
+{1: 3} * NaN, NaN
+{1: 3} / NaN, NaN
+{1: 3} == NaN, false
+{1: 3} % NaN, NaN
+{1: 3} && NaN, NaN
+{1: 3} || NaN, { '1': 3 }
+{0: 0} + 1, [object Object]1
+{0: 0} - 1, NaN
+{0: 0} * 1, NaN
+{0: 0} / 1, NaN
+{0: 0} == 1, false
+{0: 0} % 1, NaN
+{0: 0} && 1, 1
+{0: 0} || 1, { '0': 0 }
+{0: 0} + 0, [object Object]0
+{0: 0} - 0, NaN
+{0: 0} * 0, NaN
+{0: 0} / 0, NaN
+{0: 0} == 0, false
+{0: 0} % 0, NaN
+{0: 0} && 0, 0
+{0: 0} || 0, { '0': 0 }
+{0: 0} + -11, [object Object]-11
+{0: 0} - -11, NaN
+{0: 0} * -11, NaN
+{0: 0} / -11, NaN
+{0: 0} == -11, false
+{0: 0} % -11, NaN
+{0: 0} && -11, -11
+{0: 0} || -11, { '0': 0 }
+{0: 0} + 5.5, [object Object]5.5
+{0: 0} - 5.5, NaN
+{0: 0} * 5.5, NaN
+{0: 0} / 5.5, NaN
+{0: 0} == 5.5, false
+{0: 0} % 5.5, NaN
+{0: 0} && 5.5, 5.5
+{0: 0} || 5.5, { '0': 0 }
+{0: 0} + 0.0, [object Object]0
+{0: 0} - 0.0, NaN
+{0: 0} * 0.0, NaN
+{0: 0} / 0.0, NaN
+{0: 0} == 0.0, false
+{0: 0} % 0.0, NaN
+{0: 0} && 0.0, 0
+{0: 0} || 0.0, { '0': 0 }
+{0: 0} + true, [object Object]true
+{0: 0} - true, NaN
+{0: 0} * true, NaN
+{0: 0} / true, NaN
+{0: 0} == true, false
+{0: 0} % true, NaN
+{0: 0} && true, true
+{0: 0} || true, { '0': 0 }
+{0: 0} + false, [object Object]false
+{0: 0} - false, NaN
+{0: 0} * false, NaN
+{0: 0} / false, NaN
+{0: 0} == false, false
+{0: 0} % false, NaN
+{0: 0} && false, false
+{0: 0} || false, { '0': 0 }
+{0: 0} + "string", [object Object]string
+{0: 0} - "string", NaN
+{0: 0} * "string", NaN
+{0: 0} / "string", NaN
+{0: 0} == "string", false
+{0: 0} % "string", NaN
+{0: 0} && "string", string
+{0: 0} || "string", { '0': 0 }
+{0: 0} + "true", [object Object]true
+{0: 0} - "true", NaN
+{0: 0} * "true", NaN
+{0: 0} / "true", NaN
+{0: 0} == "true", false
+{0: 0} % "true", NaN
+{0: 0} && "true", true
+{0: 0} || "true", { '0': 0 }
+{0: 0} + "false", [object Object]false
+{0: 0} - "false", NaN
+{0: 0} * "false", NaN
+{0: 0} / "false", NaN
+{0: 0} == "false", false
+{0: 0} % "false", NaN
+{0: 0} && "false", false
+{0: 0} || "false", { '0': 0 }
+{0: 0} + "null", [object Object]null
+{0: 0} - "null", NaN
+{0: 0} * "null", NaN
+{0: 0} / "null", NaN
+{0: 0} == "null", false
+{0: 0} % "null", NaN
+{0: 0} && "null", null
+{0: 0} || "null", { '0': 0 }
+{0: 0} + "undefined", [object Object]undefined
+{0: 0} - "undefined", NaN
+{0: 0} * "undefined", NaN
+{0: 0} / "undefined", NaN
+{0: 0} == "undefined", false
+{0: 0} % "undefined", NaN
+{0: 0} && "undefined", undefined
+{0: 0} || "undefined", { '0': 0 }
+{0: 0} + "", [object Object]
+{0: 0} - "", NaN
+{0: 0} * "", NaN
+{0: 0} / "", NaN
+{0: 0} == "", false
+{0: 0} % "", NaN
+{0: 0} && "", 
+{0: 0} || "", { '0': 0 }
+{0: 0} + "[Object object]", [object Object][Object object]
+{0: 0} - "[Object object]", NaN
+{0: 0} * "[Object object]", NaN
+{0: 0} / "[Object object]", NaN
+{0: 0} == "[Object object]", false
+{0: 0} % "[Object object]", NaN
+{0: 0} && "[Object object]", [Object object]
+{0: 0} || "[Object object]", { '0': 0 }
+{0: 0} + "{}", [object Object]{}
+{0: 0} - "{}", NaN
+{0: 0} * "{}", NaN
+{0: 0} / "{}", NaN
+{0: 0} == "{}", false
+{0: 0} % "{}", NaN
+{0: 0} && "{}", {}
+{0: 0} || "{}", { '0': 0 }
+{0: 0} + "{a:3}", [object Object]{a:3}
+{0: 0} - "{a:3}", NaN
+{0: 0} * "{a:3}", NaN
+{0: 0} / "{a:3}", NaN
+{0: 0} == "{a:3}", false
+{0: 0} % "{a:3}", NaN
+{0: 0} && "{a:3}", {a:3}
+{0: 0} || "{a:3}", { '0': 0 }
+{0: 0} + {}, [object Object][object Object]
+{0: 0} - {}, NaN
+{0: 0} * {}, NaN
+{0: 0} / {}, NaN
+{0: 0} == {}, false
+{0: 0} % {}, NaN
+{0: 0} && {}, {}
+{0: 0} || {}, { '0': 0 }
+{0: 0} + {1: 3}, [object Object][object Object]
+{0: 0} - {1: 3}, NaN
+{0: 0} * {1: 3}, NaN
+{0: 0} / {1: 3}, NaN
+{0: 0} == {1: 3}, false
+{0: 0} % {1: 3}, NaN
+{0: 0} && {1: 3}, { '1': 3 }
+{0: 0} || {1: 3}, { '0': 0 }
+{0: 0} + {0: 0}, [object Object][object Object]
+{0: 0} - {0: 0}, NaN
+{0: 0} * {0: 0}, NaN
+{0: 0} / {0: 0}, NaN
+{0: 0} == {0: 0}, false
+{0: 0} % {0: 0}, NaN
+{0: 0} && {0: 0}, { '0': 0 }
+{0: 0} || {0: 0}, { '0': 0 }
+{0: 0} + {null:undefined}, [object Object][object Object]
+{0: 0} - {null:undefined}, NaN
+{0: 0} * {null:undefined}, NaN
+{0: 0} / {null:undefined}, NaN
+{0: 0} == {null:undefined}, false
+{0: 0} % {null:undefined}, NaN
+{0: 0} && {null:undefined}, { null: undefined }
+{0: 0} || {null:undefined}, { '0': 0 }
+{0: 0} + {a: "b"}, [object Object][object Object]
+{0: 0} - {a: "b"}, NaN
+{0: 0} * {a: "b"}, NaN
+{0: 0} / {a: "b"}, NaN
+{0: 0} == {a: "b"}, false
+{0: 0} % {a: "b"}, NaN
+{0: 0} && {a: "b"}, { a: 'b' }
+{0: 0} || {a: "b"}, { '0': 0 }
+{0: 0} + {"": {}}, [object Object][object Object]
+{0: 0} - {"": {}}, NaN
+{0: 0} * {"": {}}, NaN
+{0: 0} / {"": {}}, NaN
+{0: 0} == {"": {}}, false
+{0: 0} % {"": {}}, NaN
+{0: 0} && {"": {}}, { '': {} }
+{0: 0} || {"": {}}, { '0': 0 }
+{0: 0} + null, [object Object]null
+{0: 0} - null, NaN
+{0: 0} * null, NaN
+{0: 0} / null, NaN
+{0: 0} == null, false
+{0: 0} % null, NaN
+{0: 0} && null, null
+{0: 0} || null, { '0': 0 }
+{0: 0} + undefined, [object Object]undefined
+{0: 0} - undefined, NaN
+{0: 0} * undefined, NaN
+{0: 0} / undefined, NaN
+{0: 0} == undefined, false
+{0: 0} % undefined, NaN
+{0: 0} && undefined, undefined
+{0: 0} || undefined, { '0': 0 }
+{0: 0} + NaN, [object Object]NaN
+{0: 0} - NaN, NaN
+{0: 0} * NaN, NaN
+{0: 0} / NaN, NaN
+{0: 0} == NaN, false
+{0: 0} % NaN, NaN
+{0: 0} && NaN, NaN
+{0: 0} || NaN, { '0': 0 }
+{null:undefined} + 1, [object Object]1
+{null:undefined} - 1, NaN
+{null:undefined} * 1, NaN
+{null:undefined} / 1, NaN
+{null:undefined} == 1, false
+{null:undefined} % 1, NaN
+{null:undefined} && 1, 1
+{null:undefined} || 1, { null: undefined }
+{null:undefined} + 0, [object Object]0
+{null:undefined} - 0, NaN
+{null:undefined} * 0, NaN
+{null:undefined} / 0, NaN
+{null:undefined} == 0, false
+{null:undefined} % 0, NaN
+{null:undefined} && 0, 0
+{null:undefined} || 0, { null: undefined }
+{null:undefined} + -11, [object Object]-11
+{null:undefined} - -11, NaN
+{null:undefined} * -11, NaN
+{null:undefined} / -11, NaN
+{null:undefined} == -11, false
+{null:undefined} % -11, NaN
+{null:undefined} && -11, -11
+{null:undefined} || -11, { null: undefined }
+{null:undefined} + 5.5, [object Object]5.5
+{null:undefined} - 5.5, NaN
+{null:undefined} * 5.5, NaN
+{null:undefined} / 5.5, NaN
+{null:undefined} == 5.5, false
+{null:undefined} % 5.5, NaN
+{null:undefined} && 5.5, 5.5
+{null:undefined} || 5.5, { null: undefined }
+{null:undefined} + 0.0, [object Object]0
+{null:undefined} - 0.0, NaN
+{null:undefined} * 0.0, NaN
+{null:undefined} / 0.0, NaN
+{null:undefined} == 0.0, false
+{null:undefined} % 0.0, NaN
+{null:undefined} && 0.0, 0
+{null:undefined} || 0.0, { null: undefined }
+{null:undefined} + true, [object Object]true
+{null:undefined} - true, NaN
+{null:undefined} * true, NaN
+{null:undefined} / true, NaN
+{null:undefined} == true, false
+{null:undefined} % true, NaN
+{null:undefined} && true, true
+{null:undefined} || true, { null: undefined }
+{null:undefined} + false, [object Object]false
+{null:undefined} - false, NaN
+{null:undefined} * false, NaN
+{null:undefined} / false, NaN
+{null:undefined} == false, false
+{null:undefined} % false, NaN
+{null:undefined} && false, false
+{null:undefined} || false, { null: undefined }
+{null:undefined} + "string", [object Object]string
+{null:undefined} - "string", NaN
+{null:undefined} * "string", NaN
+{null:undefined} / "string", NaN
+{null:undefined} == "string", false
+{null:undefined} % "string", NaN
+{null:undefined} && "string", string
+{null:undefined} || "string", { null: undefined }
+{null:undefined} + "true", [object Object]true
+{null:undefined} - "true", NaN
+{null:undefined} * "true", NaN
+{null:undefined} / "true", NaN
+{null:undefined} == "true", false
+{null:undefined} % "true", NaN
+{null:undefined} && "true", true
+{null:undefined} || "true", { null: undefined }
+{null:undefined} + "false", [object Object]false
+{null:undefined} - "false", NaN
+{null:undefined} * "false", NaN
+{null:undefined} / "false", NaN
+{null:undefined} == "false", false
+{null:undefined} % "false", NaN
+{null:undefined} && "false", false
+{null:undefined} || "false", { null: undefined }
+{null:undefined} + "null", [object Object]null
+{null:undefined} - "null", NaN
+{null:undefined} * "null", NaN
+{null:undefined} / "null", NaN
+{null:undefined} == "null", false
+{null:undefined} % "null", NaN
+{null:undefined} && "null", null
+{null:undefined} || "null", { null: undefined }
+{null:undefined} + "undefined", [object Object]undefined
+{null:undefined} - "undefined", NaN
+{null:undefined} * "undefined", NaN
+{null:undefined} / "undefined", NaN
+{null:undefined} == "undefined", false
+{null:undefined} % "undefined", NaN
+{null:undefined} && "undefined", undefined
+{null:undefined} || "undefined", { null: undefined }
+{null:undefined} + "", [object Object]
+{null:undefined} - "", NaN
+{null:undefined} * "", NaN
+{null:undefined} / "", NaN
+{null:undefined} == "", false
+{null:undefined} % "", NaN
+{null:undefined} && "", 
+{null:undefined} || "", { null: undefined }
+{null:undefined} + "[Object object]", [object Object][Object object]
+{null:undefined} - "[Object object]", NaN
+{null:undefined} * "[Object object]", NaN
+{null:undefined} / "[Object object]", NaN
+{null:undefined} == "[Object object]", false
+{null:undefined} % "[Object object]", NaN
+{null:undefined} && "[Object object]", [Object object]
+{null:undefined} || "[Object object]", { null: undefined }
+{null:undefined} + "{}", [object Object]{}
+{null:undefined} - "{}", NaN
+{null:undefined} * "{}", NaN
+{null:undefined} / "{}", NaN
+{null:undefined} == "{}", false
+{null:undefined} % "{}", NaN
+{null:undefined} && "{}", {}
+{null:undefined} || "{}", { null: undefined }
+{null:undefined} + "{a:3}", [object Object]{a:3}
+{null:undefined} - "{a:3}", NaN
+{null:undefined} * "{a:3}", NaN
+{null:undefined} / "{a:3}", NaN
+{null:undefined} == "{a:3}", false
+{null:undefined} % "{a:3}", NaN
+{null:undefined} && "{a:3}", {a:3}
+{null:undefined} || "{a:3}", { null: undefined }
+{null:undefined} + {}, [object Object][object Object]
+{null:undefined} - {}, NaN
+{null:undefined} * {}, NaN
+{null:undefined} / {}, NaN
+{null:undefined} == {}, false
+{null:undefined} % {}, NaN
+{null:undefined} && {}, {}
+{null:undefined} || {}, { null: undefined }
+{null:undefined} + {1: 3}, [object Object][object Object]
+{null:undefined} - {1: 3}, NaN
+{null:undefined} * {1: 3}, NaN
+{null:undefined} / {1: 3}, NaN
+{null:undefined} == {1: 3}, false
+{null:undefined} % {1: 3}, NaN
+{null:undefined} && {1: 3}, { '1': 3 }
+{null:undefined} || {1: 3}, { null: undefined }
+{null:undefined} + {0: 0}, [object Object][object Object]
+{null:undefined} - {0: 0}, NaN
+{null:undefined} * {0: 0}, NaN
+{null:undefined} / {0: 0}, NaN
+{null:undefined} == {0: 0}, false
+{null:undefined} % {0: 0}, NaN
+{null:undefined} && {0: 0}, { '0': 0 }
+{null:undefined} || {0: 0}, { null: undefined }
+{null:undefined} + {null:undefined}, [object Object][object Object]
+{null:undefined} - {null:undefined}, NaN
+{null:undefined} * {null:undefined}, NaN
+{null:undefined} / {null:undefined}, NaN
+{null:undefined} == {null:undefined}, false
+{null:undefined} % {null:undefined}, NaN
+{null:undefined} && {null:undefined}, { null: undefined }
+{null:undefined} || {null:undefined}, { null: undefined }
+{null:undefined} + {a: "b"}, [object Object][object Object]
+{null:undefined} - {a: "b"}, NaN
+{null:undefined} * {a: "b"}, NaN
+{null:undefined} / {a: "b"}, NaN
+{null:undefined} == {a: "b"}, false
+{null:undefined} % {a: "b"}, NaN
+{null:undefined} && {a: "b"}, { a: 'b' }
+{null:undefined} || {a: "b"}, { null: undefined }
+{null:undefined} + {"": {}}, [object Object][object Object]
+{null:undefined} - {"": {}}, NaN
+{null:undefined} * {"": {}}, NaN
+{null:undefined} / {"": {}}, NaN
+{null:undefined} == {"": {}}, false
+{null:undefined} % {"": {}}, NaN
+{null:undefined} && {"": {}}, { '': {} }
+{null:undefined} || {"": {}}, { null: undefined }
+{null:undefined} + null, [object Object]null
+{null:undefined} - null, NaN
+{null:undefined} * null, NaN
+{null:undefined} / null, NaN
+{null:undefined} == null, false
+{null:undefined} % null, NaN
+{null:undefined} && null, null
+{null:undefined} || null, { null: undefined }
+{null:undefined} + undefined, [object Object]undefined
+{null:undefined} - undefined, NaN
+{null:undefined} * undefined, NaN
+{null:undefined} / undefined, NaN
+{null:undefined} == undefined, false
+{null:undefined} % undefined, NaN
+{null:undefined} && undefined, undefined
+{null:undefined} || undefined, { null: undefined }
+{null:undefined} + NaN, [object Object]NaN
+{null:undefined} - NaN, NaN
+{null:undefined} * NaN, NaN
+{null:undefined} / NaN, NaN
+{null:undefined} == NaN, false
+{null:undefined} % NaN, NaN
+{null:undefined} && NaN, NaN
+{null:undefined} || NaN, { null: undefined }
+{a: "b"} + 1, [object Object]1
+{a: "b"} - 1, NaN
+{a: "b"} * 1, NaN
+{a: "b"} / 1, NaN
+{a: "b"} == 1, false
+{a: "b"} % 1, NaN
+{a: "b"} && 1, 1
+{a: "b"} || 1, { a: 'b' }
+{a: "b"} + 0, [object Object]0
+{a: "b"} - 0, NaN
+{a: "b"} * 0, NaN
+{a: "b"} / 0, NaN
+{a: "b"} == 0, false
+{a: "b"} % 0, NaN
+{a: "b"} && 0, 0
+{a: "b"} || 0, { a: 'b' }
+{a: "b"} + -11, [object Object]-11
+{a: "b"} - -11, NaN
+{a: "b"} * -11, NaN
+{a: "b"} / -11, NaN
+{a: "b"} == -11, false
+{a: "b"} % -11, NaN
+{a: "b"} && -11, -11
+{a: "b"} || -11, { a: 'b' }
+{a: "b"} + 5.5, [object Object]5.5
+{a: "b"} - 5.5, NaN
+{a: "b"} * 5.5, NaN
+{a: "b"} / 5.5, NaN
+{a: "b"} == 5.5, false
+{a: "b"} % 5.5, NaN
+{a: "b"} && 5.5, 5.5
+{a: "b"} || 5.5, { a: 'b' }
+{a: "b"} + 0.0, [object Object]0
+{a: "b"} - 0.0, NaN
+{a: "b"} * 0.0, NaN
+{a: "b"} / 0.0, NaN
+{a: "b"} == 0.0, false
+{a: "b"} % 0.0, NaN
+{a: "b"} && 0.0, 0
+{a: "b"} || 0.0, { a: 'b' }
+{a: "b"} + true, [object Object]true
+{a: "b"} - true, NaN
+{a: "b"} * true, NaN
+{a: "b"} / true, NaN
+{a: "b"} == true, false
+{a: "b"} % true, NaN
+{a: "b"} && true, true
+{a: "b"} || true, { a: 'b' }
+{a: "b"} + false, [object Object]false
+{a: "b"} - false, NaN
+{a: "b"} * false, NaN
+{a: "b"} / false, NaN
+{a: "b"} == false, false
+{a: "b"} % false, NaN
+{a: "b"} && false, false
+{a: "b"} || false, { a: 'b' }
+{a: "b"} + "string", [object Object]string
+{a: "b"} - "string", NaN
+{a: "b"} * "string", NaN
+{a: "b"} / "string", NaN
+{a: "b"} == "string", false
+{a: "b"} % "string", NaN
+{a: "b"} && "string", string
+{a: "b"} || "string", { a: 'b' }
+{a: "b"} + "true", [object Object]true
+{a: "b"} - "true", NaN
+{a: "b"} * "true", NaN
+{a: "b"} / "true", NaN
+{a: "b"} == "true", false
+{a: "b"} % "true", NaN
+{a: "b"} && "true", true
+{a: "b"} || "true", { a: 'b' }
+{a: "b"} + "false", [object Object]false
+{a: "b"} - "false", NaN
+{a: "b"} * "false", NaN
+{a: "b"} / "false", NaN
+{a: "b"} == "false", false
+{a: "b"} % "false", NaN
+{a: "b"} && "false", false
+{a: "b"} || "false", { a: 'b' }
+{a: "b"} + "null", [object Object]null
+{a: "b"} - "null", NaN
+{a: "b"} * "null", NaN
+{a: "b"} / "null", NaN
+{a: "b"} == "null", false
+{a: "b"} % "null", NaN
+{a: "b"} && "null", null
+{a: "b"} || "null", { a: 'b' }
+{a: "b"} + "undefined", [object Object]undefined
+{a: "b"} - "undefined", NaN
+{a: "b"} * "undefined", NaN
+{a: "b"} / "undefined", NaN
+{a: "b"} == "undefined", false
+{a: "b"} % "undefined", NaN
+{a: "b"} && "undefined", undefined
+{a: "b"} || "undefined", { a: 'b' }
+{a: "b"} + "", [object Object]
+{a: "b"} - "", NaN
+{a: "b"} * "", NaN
+{a: "b"} / "", NaN
+{a: "b"} == "", false
+{a: "b"} % "", NaN
+{a: "b"} && "", 
+{a: "b"} || "", { a: 'b' }
+{a: "b"} + "[Object object]", [object Object][Object object]
+{a: "b"} - "[Object object]", NaN
+{a: "b"} * "[Object object]", NaN
+{a: "b"} / "[Object object]", NaN
+{a: "b"} == "[Object object]", false
+{a: "b"} % "[Object object]", NaN
+{a: "b"} && "[Object object]", [Object object]
+{a: "b"} || "[Object object]", { a: 'b' }
+{a: "b"} + "{}", [object Object]{}
+{a: "b"} - "{}", NaN
+{a: "b"} * "{}", NaN
+{a: "b"} / "{}", NaN
+{a: "b"} == "{}", false
+{a: "b"} % "{}", NaN
+{a: "b"} && "{}", {}
+{a: "b"} || "{}", { a: 'b' }
+{a: "b"} + "{a:3}", [object Object]{a:3}
+{a: "b"} - "{a:3}", NaN
+{a: "b"} * "{a:3}", NaN
+{a: "b"} / "{a:3}", NaN
+{a: "b"} == "{a:3}", false
+{a: "b"} % "{a:3}", NaN
+{a: "b"} && "{a:3}", {a:3}
+{a: "b"} || "{a:3}", { a: 'b' }
+{a: "b"} + {}, [object Object][object Object]
+{a: "b"} - {}, NaN
+{a: "b"} * {}, NaN
+{a: "b"} / {}, NaN
+{a: "b"} == {}, false
+{a: "b"} % {}, NaN
+{a: "b"} && {}, {}
+{a: "b"} || {}, { a: 'b' }
+{a: "b"} + {1: 3}, [object Object][object Object]
+{a: "b"} - {1: 3}, NaN
+{a: "b"} * {1: 3}, NaN
+{a: "b"} / {1: 3}, NaN
+{a: "b"} == {1: 3}, false
+{a: "b"} % {1: 3}, NaN
+{a: "b"} && {1: 3}, { '1': 3 }
+{a: "b"} || {1: 3}, { a: 'b' }
+{a: "b"} + {0: 0}, [object Object][object Object]
+{a: "b"} - {0: 0}, NaN
+{a: "b"} * {0: 0}, NaN
+{a: "b"} / {0: 0}, NaN
+{a: "b"} == {0: 0}, false
+{a: "b"} % {0: 0}, NaN
+{a: "b"} && {0: 0}, { '0': 0 }
+{a: "b"} || {0: 0}, { a: 'b' }
+{a: "b"} + {null:undefined}, [object Object][object Object]
+{a: "b"} - {null:undefined}, NaN
+{a: "b"} * {null:undefined}, NaN
+{a: "b"} / {null:undefined}, NaN
+{a: "b"} == {null:undefined}, false
+{a: "b"} % {null:undefined}, NaN
+{a: "b"} && {null:undefined}, { null: undefined }
+{a: "b"} || {null:undefined}, { a: 'b' }
+{a: "b"} + {a: "b"}, [object Object][object Object]
+{a: "b"} - {a: "b"}, NaN
+{a: "b"} * {a: "b"}, NaN
+{a: "b"} / {a: "b"}, NaN
+{a: "b"} == {a: "b"}, false
+{a: "b"} % {a: "b"}, NaN
+{a: "b"} && {a: "b"}, { a: 'b' }
+{a: "b"} || {a: "b"}, { a: 'b' }
+{a: "b"} + {"": {}}, [object Object][object Object]
+{a: "b"} - {"": {}}, NaN
+{a: "b"} * {"": {}}, NaN
+{a: "b"} / {"": {}}, NaN
+{a: "b"} == {"": {}}, false
+{a: "b"} % {"": {}}, NaN
+{a: "b"} && {"": {}}, { '': {} }
+{a: "b"} || {"": {}}, { a: 'b' }
+{a: "b"} + null, [object Object]null
+{a: "b"} - null, NaN
+{a: "b"} * null, NaN
+{a: "b"} / null, NaN
+{a: "b"} == null, false
+{a: "b"} % null, NaN
+{a: "b"} && null, null
+{a: "b"} || null, { a: 'b' }
+{a: "b"} + undefined, [object Object]undefined
+{a: "b"} - undefined, NaN
+{a: "b"} * undefined, NaN
+{a: "b"} / undefined, NaN
+{a: "b"} == undefined, false
+{a: "b"} % undefined, NaN
+{a: "b"} && undefined, undefined
+{a: "b"} || undefined, { a: 'b' }
+{a: "b"} + NaN, [object Object]NaN
+{a: "b"} - NaN, NaN
+{a: "b"} * NaN, NaN
+{a: "b"} / NaN, NaN
+{a: "b"} == NaN, false
+{a: "b"} % NaN, NaN
+{a: "b"} && NaN, NaN
+{a: "b"} || NaN, { a: 'b' }
+{"": {}} + 1, [object Object]1
+{"": {}} - 1, NaN
+{"": {}} * 1, NaN
+{"": {}} / 1, NaN
+{"": {}} == 1, false
+{"": {}} % 1, NaN
+{"": {}} && 1, 1
+{"": {}} || 1, { '': {} }
+{"": {}} + 0, [object Object]0
+{"": {}} - 0, NaN
+{"": {}} * 0, NaN
+{"": {}} / 0, NaN
+{"": {}} == 0, false
+{"": {}} % 0, NaN
+{"": {}} && 0, 0
+{"": {}} || 0, { '': {} }
+{"": {}} + -11, [object Object]-11
+{"": {}} - -11, NaN
+{"": {}} * -11, NaN
+{"": {}} / -11, NaN
+{"": {}} == -11, false
+{"": {}} % -11, NaN
+{"": {}} && -11, -11
+{"": {}} || -11, { '': {} }
+{"": {}} + 5.5, [object Object]5.5
+{"": {}} - 5.5, NaN
+{"": {}} * 5.5, NaN
+{"": {}} / 5.5, NaN
+{"": {}} == 5.5, false
+{"": {}} % 5.5, NaN
+{"": {}} && 5.5, 5.5
+{"": {}} || 5.5, { '': {} }
+{"": {}} + 0.0, [object Object]0
+{"": {}} - 0.0, NaN
+{"": {}} * 0.0, NaN
+{"": {}} / 0.0, NaN
+{"": {}} == 0.0, false
+{"": {}} % 0.0, NaN
+{"": {}} && 0.0, 0
+{"": {}} || 0.0, { '': {} }
+{"": {}} + true, [object Object]true
+{"": {}} - true, NaN
+{"": {}} * true, NaN
+{"": {}} / true, NaN
+{"": {}} == true, false
+{"": {}} % true, NaN
+{"": {}} && true, true
+{"": {}} || true, { '': {} }
+{"": {}} + false, [object Object]false
+{"": {}} - false, NaN
+{"": {}} * false, NaN
+{"": {}} / false, NaN
+{"": {}} == false, false
+{"": {}} % false, NaN
+{"": {}} && false, false
+{"": {}} || false, { '': {} }
+{"": {}} + "string", [object Object]string
+{"": {}} - "string", NaN
+{"": {}} * "string", NaN
+{"": {}} / "string", NaN
+{"": {}} == "string", false
+{"": {}} % "string", NaN
+{"": {}} && "string", string
+{"": {}} || "string", { '': {} }
+{"": {}} + "true", [object Object]true
+{"": {}} - "true", NaN
+{"": {}} * "true", NaN
+{"": {}} / "true", NaN
+{"": {}} == "true", false
+{"": {}} % "true", NaN
+{"": {}} && "true", true
+{"": {}} || "true", { '': {} }
+{"": {}} + "false", [object Object]false
+{"": {}} - "false", NaN
+{"": {}} * "false", NaN
+{"": {}} / "false", NaN
+{"": {}} == "false", false
+{"": {}} % "false", NaN
+{"": {}} && "false", false
+{"": {}} || "false", { '': {} }
+{"": {}} + "null", [object Object]null
+{"": {}} - "null", NaN
+{"": {}} * "null", NaN
+{"": {}} / "null", NaN
+{"": {}} == "null", false
+{"": {}} % "null", NaN
+{"": {}} && "null", null
+{"": {}} || "null", { '': {} }
+{"": {}} + "undefined", [object Object]undefined
+{"": {}} - "undefined", NaN
+{"": {}} * "undefined", NaN
+{"": {}} / "undefined", NaN
+{"": {}} == "undefined", false
+{"": {}} % "undefined", NaN
+{"": {}} && "undefined", undefined
+{"": {}} || "undefined", { '': {} }
+{"": {}} + "", [object Object]
+{"": {}} - "", NaN
+{"": {}} * "", NaN
+{"": {}} / "", NaN
+{"": {}} == "", false
+{"": {}} % "", NaN
+{"": {}} && "", 
+{"": {}} || "", { '': {} }
+{"": {}} + "[Object object]", [object Object][Object object]
+{"": {}} - "[Object object]", NaN
+{"": {}} * "[Object object]", NaN
+{"": {}} / "[Object object]", NaN
+{"": {}} == "[Object object]", false
+{"": {}} % "[Object object]", NaN
+{"": {}} && "[Object object]", [Object object]
+{"": {}} || "[Object object]", { '': {} }
+{"": {}} + "{}", [object Object]{}
+{"": {}} - "{}", NaN
+{"": {}} * "{}", NaN
+{"": {}} / "{}", NaN
+{"": {}} == "{}", false
+{"": {}} % "{}", NaN
+{"": {}} && "{}", {}
+{"": {}} || "{}", { '': {} }
+{"": {}} + "{a:3}", [object Object]{a:3}
+{"": {}} - "{a:3}", NaN
+{"": {}} * "{a:3}", NaN
+{"": {}} / "{a:3}", NaN
+{"": {}} == "{a:3}", false
+{"": {}} % "{a:3}", NaN
+{"": {}} && "{a:3}", {a:3}
+{"": {}} || "{a:3}", { '': {} }
+{"": {}} + {}, [object Object][object Object]
+{"": {}} - {}, NaN
+{"": {}} * {}, NaN
+{"": {}} / {}, NaN
+{"": {}} == {}, false
+{"": {}} % {}, NaN
+{"": {}} && {}, {}
+{"": {}} || {}, { '': {} }
+{"": {}} + {1: 3}, [object Object][object Object]
+{"": {}} - {1: 3}, NaN
+{"": {}} * {1: 3}, NaN
+{"": {}} / {1: 3}, NaN
+{"": {}} == {1: 3}, false
+{"": {}} % {1: 3}, NaN
+{"": {}} && {1: 3}, { '1': 3 }
+{"": {}} || {1: 3}, { '': {} }
+{"": {}} + {0: 0}, [object Object][object Object]
+{"": {}} - {0: 0}, NaN
+{"": {}} * {0: 0}, NaN
+{"": {}} / {0: 0}, NaN
+{"": {}} == {0: 0}, false
+{"": {}} % {0: 0}, NaN
+{"": {}} && {0: 0}, { '0': 0 }
+{"": {}} || {0: 0}, { '': {} }
+{"": {}} + {null:undefined}, [object Object][object Object]
+{"": {}} - {null:undefined}, NaN
+{"": {}} * {null:undefined}, NaN
+{"": {}} / {null:undefined}, NaN
+{"": {}} == {null:undefined}, false
+{"": {}} % {null:undefined}, NaN
+{"": {}} && {null:undefined}, { null: undefined }
+{"": {}} || {null:undefined}, { '': {} }
+{"": {}} + {a: "b"}, [object Object][object Object]
+{"": {}} - {a: "b"}, NaN
+{"": {}} * {a: "b"}, NaN
+{"": {}} / {a: "b"}, NaN
+{"": {}} == {a: "b"}, false
+{"": {}} % {a: "b"}, NaN
+{"": {}} && {a: "b"}, { a: 'b' }
+{"": {}} || {a: "b"}, { '': {} }
+{"": {}} + {"": {}}, [object Object][object Object]
+{"": {}} - {"": {}}, NaN
+{"": {}} * {"": {}}, NaN
+{"": {}} / {"": {}}, NaN
+{"": {}} == {"": {}}, false
+{"": {}} % {"": {}}, NaN
+{"": {}} && {"": {}}, { '': {} }
+{"": {}} || {"": {}}, { '': {} }
+{"": {}} + null, [object Object]null
+{"": {}} - null, NaN
+{"": {}} * null, NaN
+{"": {}} / null, NaN
+{"": {}} == null, false
+{"": {}} % null, NaN
+{"": {}} && null, null
+{"": {}} || null, { '': {} }
+{"": {}} + undefined, [object Object]undefined
+{"": {}} - undefined, NaN
+{"": {}} * undefined, NaN
+{"": {}} / undefined, NaN
+{"": {}} == undefined, false
+{"": {}} % undefined, NaN
+{"": {}} && undefined, undefined
+{"": {}} || undefined, { '': {} }
+{"": {}} + NaN, [object Object]NaN
+{"": {}} - NaN, NaN
+{"": {}} * NaN, NaN
+{"": {}} / NaN, NaN
+{"": {}} == NaN, false
+{"": {}} % NaN, NaN
+{"": {}} && NaN, NaN
+{"": {}} || NaN, { '': {} }
+null + 1, 1
+null - 1, -1
+null * 1, 0
+null / 1, 0
+null == 1, false
+null % 1, 0
+null && 1, null
+null || 1, 1
+null + 0, 0
+null - 0, 0
+null * 0, 0
+null / 0, NaN
+null == 0, false
+null % 0, NaN
+null && 0, null
+null || 0, 0
+null + -11, -11
+null - -11, 11
+null * -11, -0
+null / -11, -0
+null == -11, false
+null % -11, 0
+null && -11, null
+null || -11, -11
+null + 5.5, 5.5
+null - 5.5, -5.5
+null * 5.5, 0
+null / 5.5, 0
+null == 5.5, false
+null % 5.5, 0
+null && 5.5, null
+null || 5.5, 5.5
+null + 0.0, 0
+null - 0.0, 0
+null * 0.0, 0
+null / 0.0, NaN
+null == 0.0, false
+null % 0.0, NaN
+null && 0.0, null
+null || 0.0, 0
+null + true, 1
+null - true, -1
+null * true, 0
+null / true, 0
+null == true, false
+null % true, 0
+null && true, null
+null || true, true
+null + false, 0
+null - false, 0
+null * false, 0
+null / false, NaN
+null == false, false
+null % false, NaN
+null && false, null
+null || false, false
+null + "string", nullstring
+null - "string", NaN
+null * "string", NaN
+null / "string", NaN
+null == "string", false
+null % "string", NaN
+null && "string", null
+null || "string", string
+null + "true", nulltrue
+null - "true", NaN
+null * "true", NaN
+null / "true", NaN
+null == "true", false
+null % "true", NaN
+null && "true", null
+null || "true", true
+null + "false", nullfalse
+null - "false", NaN
+null * "false", NaN
+null / "false", NaN
+null == "false", false
+null % "false", NaN
+null && "false", null
+null || "false", false
+null + "null", nullnull
+null - "null", NaN
+null * "null", NaN
+null / "null", NaN
+null == "null", false
+null % "null", NaN
+null && "null", null
+null || "null", null
+null + "undefined", nullundefined
+null - "undefined", NaN
+null * "undefined", NaN
+null / "undefined", NaN
+null == "undefined", false
+null % "undefined", NaN
+null && "undefined", null
+null || "undefined", undefined
+null + "", null
+null - "", 0
+null * "", 0
+null / "", NaN
+null == "", false
+null % "", NaN
+null && "", null
+null || "", 
+null + "[Object object]", null[Object object]
+null - "[Object object]", NaN
+null * "[Object object]", NaN
+null / "[Object object]", NaN
+null == "[Object object]", false
+null % "[Object object]", NaN
+null && "[Object object]", null
+null || "[Object object]", [Object object]
+null + "{}", null{}
+null - "{}", NaN
+null * "{}", NaN
+null / "{}", NaN
+null == "{}", false
+null % "{}", NaN
+null && "{}", null
+null || "{}", {}
+null + "{a:3}", null{a:3}
+null - "{a:3}", NaN
+null * "{a:3}", NaN
+null / "{a:3}", NaN
+null == "{a:3}", false
+null % "{a:3}", NaN
+null && "{a:3}", null
+null || "{a:3}", {a:3}
+null + {}, null[object Object]
+null - {}, NaN
+null * {}, NaN
+null / {}, NaN
+null == {}, false
+null % {}, NaN
+null && {}, null
+null || {}, {}
+null + {1: 3}, null[object Object]
+null - {1: 3}, NaN
+null * {1: 3}, NaN
+null / {1: 3}, NaN
+null == {1: 3}, false
+null % {1: 3}, NaN
+null && {1: 3}, null
+null || {1: 3}, { '1': 3 }
+null + {0: 0}, null[object Object]
+null - {0: 0}, NaN
+null * {0: 0}, NaN
+null / {0: 0}, NaN
+null == {0: 0}, false
+null % {0: 0}, NaN
+null && {0: 0}, null
+null || {0: 0}, { '0': 0 }
+null + {null:undefined}, null[object Object]
+null - {null:undefined}, NaN
+null * {null:undefined}, NaN
+null / {null:undefined}, NaN
+null == {null:undefined}, false
+null % {null:undefined}, NaN
+null && {null:undefined}, null
+null || {null:undefined}, { null: undefined }
+null + {a: "b"}, null[object Object]
+null - {a: "b"}, NaN
+null * {a: "b"}, NaN
+null / {a: "b"}, NaN
+null == {a: "b"}, false
+null % {a: "b"}, NaN
+null && {a: "b"}, null
+null || {a: "b"}, { a: 'b' }
+null + {"": {}}, null[object Object]
+null - {"": {}}, NaN
+null * {"": {}}, NaN
+null / {"": {}}, NaN
+null == {"": {}}, false
+null % {"": {}}, NaN
+null && {"": {}}, null
+null || {"": {}}, { '': {} }
+null + null, 0
+null - null, 0
+null * null, 0
+null / null, NaN
+null == null, true
+null % null, NaN
+null && null, null
+null || null, null
+null + undefined, NaN
+null - undefined, NaN
+null * undefined, NaN
+null / undefined, NaN
+null == undefined, true
+null % undefined, NaN
+null && undefined, null
+null || undefined, undefined
+null + NaN, NaN
+null - NaN, NaN
+null * NaN, NaN
+null / NaN, NaN
+null == NaN, false
+null % NaN, NaN
+null && NaN, null
+null || NaN, NaN
+undefined + 1, NaN
+undefined - 1, NaN
+undefined * 1, NaN
+undefined / 1, NaN
+undefined == 1, false
+undefined % 1, NaN
+undefined && 1, undefined
+undefined || 1, 1
+undefined + 0, NaN
+undefined - 0, NaN
+undefined * 0, NaN
+undefined / 0, NaN
+undefined == 0, false
+undefined % 0, NaN
+undefined && 0, undefined
+undefined || 0, 0
+undefined + -11, NaN
+undefined - -11, NaN
+undefined * -11, NaN
+undefined / -11, NaN
+undefined == -11, false
+undefined % -11, NaN
+undefined && -11, undefined
+undefined || -11, -11
+undefined + 5.5, NaN
+undefined - 5.5, NaN
+undefined * 5.5, NaN
+undefined / 5.5, NaN
+undefined == 5.5, false
+undefined % 5.5, NaN
+undefined && 5.5, undefined
+undefined || 5.5, 5.5
+undefined + 0.0, NaN
+undefined - 0.0, NaN
+undefined * 0.0, NaN
+undefined / 0.0, NaN
+undefined == 0.0, false
+undefined % 0.0, NaN
+undefined && 0.0, undefined
+undefined || 0.0, 0
+undefined + true, NaN
+undefined - true, NaN
+undefined * true, NaN
+undefined / true, NaN
+undefined == true, false
+undefined % true, NaN
+undefined && true, undefined
+undefined || true, true
+undefined + false, NaN
+undefined - false, NaN
+undefined * false, NaN
+undefined / false, NaN
+undefined == false, false
+undefined % false, NaN
+undefined && false, undefined
+undefined || false, false
+undefined + "string", undefinedstring
+undefined - "string", NaN
+undefined * "string", NaN
+undefined / "string", NaN
+undefined == "string", false
+undefined % "string", NaN
+undefined && "string", undefined
+undefined || "string", string
+undefined + "true", undefinedtrue
+undefined - "true", NaN
+undefined * "true", NaN
+undefined / "true", NaN
+undefined == "true", false
+undefined % "true", NaN
+undefined && "true", undefined
+undefined || "true", true
+undefined + "false", undefinedfalse
+undefined - "false", NaN
+undefined * "false", NaN
+undefined / "false", NaN
+undefined == "false", false
+undefined % "false", NaN
+undefined && "false", undefined
+undefined || "false", false
+undefined + "null", undefinednull
+undefined - "null", NaN
+undefined * "null", NaN
+undefined / "null", NaN
+undefined == "null", false
+undefined % "null", NaN
+undefined && "null", undefined
+undefined || "null", null
+undefined + "undefined", undefinedundefined
+undefined - "undefined", NaN
+undefined * "undefined", NaN
+undefined / "undefined", NaN
+undefined == "undefined", false
+undefined % "undefined", NaN
+undefined && "undefined", undefined
+undefined || "undefined", undefined
+undefined + "", undefined
+undefined - "", NaN
+undefined * "", NaN
+undefined / "", NaN
+undefined == "", false
+undefined % "", NaN
+undefined && "", undefined
+undefined || "", 
+undefined + "[Object object]", undefined[Object object]
+undefined - "[Object object]", NaN
+undefined * "[Object object]", NaN
+undefined / "[Object object]", NaN
+undefined == "[Object object]", false
+undefined % "[Object object]", NaN
+undefined && "[Object object]", undefined
+undefined || "[Object object]", [Object object]
+undefined + "{}", undefined{}
+undefined - "{}", NaN
+undefined * "{}", NaN
+undefined / "{}", NaN
+undefined == "{}", false
+undefined % "{}", NaN
+undefined && "{}", undefined
+undefined || "{}", {}
+undefined + "{a:3}", undefined{a:3}
+undefined - "{a:3}", NaN
+undefined * "{a:3}", NaN
+undefined / "{a:3}", NaN
+undefined == "{a:3}", false
+undefined % "{a:3}", NaN
+undefined && "{a:3}", undefined
+undefined || "{a:3}", {a:3}
+undefined + {}, undefined[object Object]
+undefined - {}, NaN
+undefined * {}, NaN
+undefined / {}, NaN
+undefined == {}, false
+undefined % {}, NaN
+undefined && {}, undefined
+undefined || {}, {}
+undefined + {1: 3}, undefined[object Object]
+undefined - {1: 3}, NaN
+undefined * {1: 3}, NaN
+undefined / {1: 3}, NaN
+undefined == {1: 3}, false
+undefined % {1: 3}, NaN
+undefined && {1: 3}, undefined
+undefined || {1: 3}, { '1': 3 }
+undefined + {0: 0}, undefined[object Object]
+undefined - {0: 0}, NaN
+undefined * {0: 0}, NaN
+undefined / {0: 0}, NaN
+undefined == {0: 0}, false
+undefined % {0: 0}, NaN
+undefined && {0: 0}, undefined
+undefined || {0: 0}, { '0': 0 }
+undefined + {null:undefined}, undefined[object Object]
+undefined - {null:undefined}, NaN
+undefined * {null:undefined}, NaN
+undefined / {null:undefined}, NaN
+undefined == {null:undefined}, false
+undefined % {null:undefined}, NaN
+undefined && {null:undefined}, undefined
+undefined || {null:undefined}, { null: undefined }
+undefined + {a: "b"}, undefined[object Object]
+undefined - {a: "b"}, NaN
+undefined * {a: "b"}, NaN
+undefined / {a: "b"}, NaN
+undefined == {a: "b"}, false
+undefined % {a: "b"}, NaN
+undefined && {a: "b"}, undefined
+undefined || {a: "b"}, { a: 'b' }
+undefined + {"": {}}, undefined[object Object]
+undefined - {"": {}}, NaN
+undefined * {"": {}}, NaN
+undefined / {"": {}}, NaN
+undefined == {"": {}}, false
+undefined % {"": {}}, NaN
+undefined && {"": {}}, undefined
+undefined || {"": {}}, { '': {} }
+undefined + null, NaN
+undefined - null, NaN
+undefined * null, NaN
+undefined / null, NaN
+undefined == null, true
+undefined % null, NaN
+undefined && null, undefined
+undefined || null, null
+undefined + undefined, NaN
+undefined - undefined, NaN
+undefined * undefined, NaN
+undefined / undefined, NaN
+undefined == undefined, true
+undefined % undefined, NaN
+undefined && undefined, undefined
+undefined || undefined, undefined
+undefined + NaN, NaN
+undefined - NaN, NaN
+undefined * NaN, NaN
+undefined / NaN, NaN
+undefined == NaN, false
+undefined % NaN, NaN
+undefined && NaN, undefined
+undefined || NaN, NaN
+NaN + 1, NaN
+NaN - 1, NaN
+NaN * 1, NaN
+NaN / 1, NaN
+NaN == 1, false
+NaN % 1, NaN
+NaN && 1, NaN
+NaN || 1, 1
+NaN + 0, NaN
+NaN - 0, NaN
+NaN * 0, NaN
+NaN / 0, NaN
+NaN == 0, false
+NaN % 0, NaN
+NaN && 0, NaN
+NaN || 0, 0
+NaN + -11, NaN
+NaN - -11, NaN
+NaN * -11, NaN
+NaN / -11, NaN
+NaN == -11, false
+NaN % -11, NaN
+NaN && -11, NaN
+NaN || -11, -11
+NaN + 5.5, NaN
+NaN - 5.5, NaN
+NaN * 5.5, NaN
+NaN / 5.5, NaN
+NaN == 5.5, false
+NaN % 5.5, NaN
+NaN && 5.5, NaN
+NaN || 5.5, 5.5
+NaN + 0.0, NaN
+NaN - 0.0, NaN
+NaN * 0.0, NaN
+NaN / 0.0, NaN
+NaN == 0.0, false
+NaN % 0.0, NaN
+NaN && 0.0, NaN
+NaN || 0.0, 0
+NaN + true, NaN
+NaN - true, NaN
+NaN * true, NaN
+NaN / true, NaN
+NaN == true, false
+NaN % true, NaN
+NaN && true, NaN
+NaN || true, true
+NaN + false, NaN
+NaN - false, NaN
+NaN * false, NaN
+NaN / false, NaN
+NaN == false, false
+NaN % false, NaN
+NaN && false, NaN
+NaN || false, false
+NaN + "string", NaNstring
+NaN - "string", NaN
+NaN * "string", NaN
+NaN / "string", NaN
+NaN == "string", false
+NaN % "string", NaN
+NaN && "string", NaN
+NaN || "string", string
+NaN + "true", NaNtrue
+NaN - "true", NaN
+NaN * "true", NaN
+NaN / "true", NaN
+NaN == "true", false
+NaN % "true", NaN
+NaN && "true", NaN
+NaN || "true", true
+NaN + "false", NaNfalse
+NaN - "false", NaN
+NaN * "false", NaN
+NaN / "false", NaN
+NaN == "false", false
+NaN % "false", NaN
+NaN && "false", NaN
+NaN || "false", false
+NaN + "null", NaNnull
+NaN - "null", NaN
+NaN * "null", NaN
+NaN / "null", NaN
+NaN == "null", false
+NaN % "null", NaN
+NaN && "null", NaN
+NaN || "null", null
+NaN + "undefined", NaNundefined
+NaN - "undefined", NaN
+NaN * "undefined", NaN
+NaN / "undefined", NaN
+NaN == "undefined", false
+NaN % "undefined", NaN
+NaN && "undefined", NaN
+NaN || "undefined", undefined
+NaN + "", NaN
+NaN - "", NaN
+NaN * "", NaN
+NaN / "", NaN
+NaN == "", false
+NaN % "", NaN
+NaN && "", NaN
+NaN || "", 
+NaN + "[Object object]", NaN[Object object]
+NaN - "[Object object]", NaN
+NaN * "[Object object]", NaN
+NaN / "[Object object]", NaN
+NaN == "[Object object]", false
+NaN % "[Object object]", NaN
+NaN && "[Object object]", NaN
+NaN || "[Object object]", [Object object]
+NaN + "{}", NaN{}
+NaN - "{}", NaN
+NaN * "{}", NaN
+NaN / "{}", NaN
+NaN == "{}", false
+NaN % "{}", NaN
+NaN && "{}", NaN
+NaN || "{}", {}
+NaN + "{a:3}", NaN{a:3}
+NaN - "{a:3}", NaN
+NaN * "{a:3}", NaN
+NaN / "{a:3}", NaN
+NaN == "{a:3}", false
+NaN % "{a:3}", NaN
+NaN && "{a:3}", NaN
+NaN || "{a:3}", {a:3}
+NaN + {}, NaN[object Object]
+NaN - {}, NaN
+NaN * {}, NaN
+NaN / {}, NaN
+NaN == {}, false
+NaN % {}, NaN
+NaN && {}, NaN
+NaN || {}, {}
+NaN + {1: 3}, NaN[object Object]
+NaN - {1: 3}, NaN
+NaN * {1: 3}, NaN
+NaN / {1: 3}, NaN
+NaN == {1: 3}, false
+NaN % {1: 3}, NaN
+NaN && {1: 3}, NaN
+NaN || {1: 3}, { '1': 3 }
+NaN + {0: 0}, NaN[object Object]
+NaN - {0: 0}, NaN
+NaN * {0: 0}, NaN
+NaN / {0: 0}, NaN
+NaN == {0: 0}, false
+NaN % {0: 0}, NaN
+NaN && {0: 0}, NaN
+NaN || {0: 0}, { '0': 0 }
+NaN + {null:undefined}, NaN[object Object]
+NaN - {null:undefined}, NaN
+NaN * {null:undefined}, NaN
+NaN / {null:undefined}, NaN
+NaN == {null:undefined}, false
+NaN % {null:undefined}, NaN
+NaN && {null:undefined}, NaN
+NaN || {null:undefined}, { null: undefined }
+NaN + {a: "b"}, NaN[object Object]
+NaN - {a: "b"}, NaN
+NaN * {a: "b"}, NaN
+NaN / {a: "b"}, NaN
+NaN == {a: "b"}, false
+NaN % {a: "b"}, NaN
+NaN && {a: "b"}, NaN
+NaN || {a: "b"}, { a: 'b' }
+NaN + {"": {}}, NaN[object Object]
+NaN - {"": {}}, NaN
+NaN * {"": {}}, NaN
+NaN / {"": {}}, NaN
+NaN == {"": {}}, false
+NaN % {"": {}}, NaN
+NaN && {"": {}}, NaN
+NaN || {"": {}}, { '': {} }
+NaN + null, NaN
+NaN - null, NaN
+NaN * null, NaN
+NaN / null, NaN
+NaN == null, false
+NaN % null, NaN
+NaN && null, NaN
+NaN || null, null
+NaN + undefined, NaN
+NaN - undefined, NaN
+NaN * undefined, NaN
+NaN / undefined, NaN
+NaN == undefined, false
+NaN % undefined, NaN
+NaN && undefined, NaN
+NaN || undefined, undefined
+NaN + NaN, NaN
+NaN - NaN, NaN
+NaN * NaN, NaN
+NaN / NaN, NaN
+NaN == NaN, false
+NaN % NaN, NaN
+NaN && NaN, NaN
+NaN || NaN, NaN
