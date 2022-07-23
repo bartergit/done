@@ -7,32 +7,38 @@ struct SingleExpr {
     TypedValue value;
 };
 
-struct BinExpr {
-    std::string op;
-    std::variant<BinExpr *, SingleExpr *> first;
-    std::variant<BinExpr *, SingleExpr *> second;
+struct BinExpr;
+
+struct FunctionCall;
+
+struct VariableRef {
+    std::string ref;
 };
 
-typedef std::variant<BinExpr *, SingleExpr *> Expr;
+typedef std::variant<BinExpr *, SingleExpr *, VariableRef *, FunctionCall *> Expr;
+
+struct BinExpr {
+    std::string op;
+    Expr first;
+    Expr second;
+};
+
+struct FunctionCall {
+    std::string name;
+    std::vector<Expr> arguments;
+};
+
 
 Expr generate_expression_tree(std::vector<Expr> &current_tokens) {
     static std::set<const char *> operators{"+", "-", "*", "/", "==", "%", "&&", "||",
-//                                                 "===", "!=", "!==",
+                                            "===", "!=", "!==",
     };
-//    std::vector<Expr> current_tokens;
     std::vector<Expr> temp_tokens;
-//    temp_tokens.reserve(input_tokens.size());
-//    current_tokens.reserve(input_tokens.size());
-    std::vector<std::set<std::string>> precedence = {{"*", "/"},
-                                                     {"+", "-"}};
-//    for (auto &token: input_tokens) {
-//        if (operators.contains(token)) {
-//            current_tokens.push_back(new BinExpr{token});
-//            continue;
-//        }
-//        current_tokens.push_back(new SingleExpr{token});
-//    }
-
+    std::vector<std::set<std::string>> precedence = {{"."},
+                                                     {"*",   "/",   "%"},
+                                                     {"+",   "-"},
+                                                     {"===", "!==", "!=", "=="},
+                                                     {"||",  "&&"}};
     for (auto &cur_precedence: precedence) {
         auto i = -1;
         bool to_skip = false;
@@ -43,6 +49,12 @@ Expr generate_expression_tree(std::vector<Expr> &current_tokens) {
                 continue;
             }
             std::visit(overloaded{
+                    [&](FunctionCall *expr) {
+
+                    },
+                    [&](VariableRef *expr) {
+                        temp_tokens.emplace_back(expr);
+                    },
                     [&](SingleExpr *expr) {
                         temp_tokens.emplace_back(expr);
                     },

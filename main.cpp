@@ -1,28 +1,25 @@
 #include <iostream>
-#include <iomanip>
+#include <string>
 
-#include "TypedValue.h"
 #include "create_test_cases.h"
 #include "parser.h"
 #include "expr_maker.h"
-#include "evaluate_expr.h"
 
-// all math operations = A.cast<NUMBER> + B.cast<NUMBER>
-// except + (special case for string)
-// 15 == true => 15 == 1
+#include "Machine.h"
+
+#include "evaluate_expr.h"
+#include "control_flow.h"
+#include "program_executor.h"
+
 
 int main() {
-    Parser parser{"1.2 + 15 + \"11  sd \" + null * undefined "};
-    auto tokens = parser.parse();
-//    create_test_cases();
-//    std::vector<const char *> input_tokens = {"a", "+", "b", "*", "d"};
-    auto res = generate_expression_tree(*tokens);
+    auto input = R"(1.2 + 15 + {1:2, "3": null , undefined: {true: ""} } - "11  sd " + null * undefined)";
+    input = R"({1:3} == {1:"3"})";
+    input = "a + 3";
+    Parser parser{input};
+    auto tokens = *parser.parse();
+    auto res = generate_expression_tree(tokens);
     auto val = evaluate_expr(res);
     std::cout << val.str();
-//    std::cout << std::holds_alternative<BinExpr *>(res) << "\n";
-//    auto result = TypedValue(0.1f) + TypedValue(0.2f);
-//    std::cout << std::setprecision(20) << 0.1 + 0.2 << "\n";
-//    std::cout << result.str() << "\n";
-//    std::cout << TypedValue(NULLJS).str() << "\n";
     return 0;
 }

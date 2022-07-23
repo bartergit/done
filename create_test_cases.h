@@ -12,9 +12,9 @@
 
 
 std::string exec(const char *cmd) {
-    std::array<char, 128> buffer;
+    std::array<char, 128> buffer{};
     std::string result;
-    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd, "r"), pclose);
+    std::unique_ptr<FILE, decltype(&_pclose)> pipe(_popen(cmd, "r"), _pclose);
     if (!pipe) {
         throw std::runtime_error("popen() failed!");
     }
@@ -29,7 +29,7 @@ std::vector<std::pair<std::string, std::string>> cross_product(std::vector<std::
     result.reserve(entries.size() * entries.size());
     for (auto &item: entries) {
         for (auto &item2: entries) {
-            result.push_back({item, item2});
+            result.emplace_back(item, item2);
         }
     }
     return result;

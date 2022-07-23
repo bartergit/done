@@ -28,18 +28,27 @@ std::string type_to_str(TYPE type);
 
 class TypedValue {
 public:
+    typedef std::unordered_map<std::string, TypedValue> Attributes;
     TYPE type;
-    std::variant<bool, float, const char *, int> data;  // int for types UNDEFINED, NULLJS, NaN
-    std::unordered_map<const char *, TypedValue> attributes{};
+    std::variant<bool, float, std::string, int, std::unordered_map<std::string, TypedValue>> data;
+    // int for types UNDEFINED, NULLJS, NaN
+    // map for objects
+
+    explicit TypedValue(Attributes data) : data(data) {
+        type = OBJECT;
+    }
 
     explicit TypedValue(TYPE type) : type(type) {
         data = 0;
     }
 
+    explicit TypedValue(const char *str) {
+        data = str;
+        type = STRING;
+    }
+
     explicit TypedValue(std::string str) {
-        auto * s = new std::string; // wtf is that
-        *s = str;
-        data = s->c_str();
+        data = str;
         type = STRING;
     }
 
@@ -70,9 +79,19 @@ public:
 
     TypedValue operator||(TypedValue other);
 
-    TypedValue operator==(TypedValue other);
+    bool operator==(const TypedValue &other) const;
 
-    TypedValue get_attribute(const char *attribute_name);
+    bool operator!=(const TypedValue & other) const;
+
+    TypedValue eq(TypedValue other); // ==
+
+    TypedValue strict_eq(TypedValue other); // ===
+
+    TypedValue neq(TypedValue other); // ==
+
+    TypedValue strict_neq(TypedValue other); // ===
+
+    TypedValue get_attribute(TypedValue other);
 
     template<TYPE to>
     TypedValue cast();
