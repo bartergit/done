@@ -35,7 +35,7 @@ std::vector<std::pair<std::string, std::string>> cross_product(std::vector<std::
     return result;
 }
 
-void write(const char *filename, std::string text) {
+void write(const std::string &filename, const std::string &text) {
     std::fstream fs;
     fs.open(filename, std::ios::out);
     fs.seekg(0);
