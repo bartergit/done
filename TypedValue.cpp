@@ -1,4 +1,6 @@
 #include "TypedValue.h"
+#include "program_executor.h"
+#include "control_flow.h"
 #include <sstream>
 #include <utility>
 
@@ -250,6 +252,15 @@ TypedValue TypedValue::neq(TypedValue other) {
 
 TypedValue TypedValue::strict_neq(TypedValue other) {
     return TypedValue(not this->strict_eq(std::move(other)).unwrap<bool>());
+}
+
+TypedValue TypedValue::operator()() {
+    if (type == OBJECT and unwrap<Attributes>().contains("body")){
+        auto body_ptr = unwrap<Attributes>().at("body");
+        auto body = static_cast<std::vector<Statement>>((int)body_ptr.unwrap<float>());
+        return execute_body(body);
+    }
+    panic("non function tried to be called");
 }
 
 

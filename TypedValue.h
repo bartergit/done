@@ -60,6 +60,10 @@ public:
         type = NUMBER;
     }
 
+    explicit TypedValue(int data) : data(data) {
+        type = NUMBER;
+    }
+
     template<class T>
     T unwrap() {
         return std::get<T>(data);
@@ -81,7 +85,9 @@ public:
 
     bool operator==(const TypedValue &other) const;
 
-    bool operator!=(const TypedValue & other) const;
+    bool operator!=(const TypedValue &other) const;
+
+    TypedValue operator()();
 
     TypedValue eq(TypedValue other); // ==
 

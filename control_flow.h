@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Expr.h"
+
 struct Assign;
 struct If;
 struct While;

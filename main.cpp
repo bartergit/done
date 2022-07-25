@@ -1,11 +1,16 @@
 #include <iostream>
 #include <string>
 
+
+#include "Machine.h"
+
+Machine machine{};
+
+
 #include "create_test_cases.h"
 #include "parser.h"
 #include "expr_maker.h"
 
-#include "Machine.h"
 
 #include "evaluate_expr.h"
 #include "control_flow.h"
