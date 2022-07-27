@@ -4,4 +4,4 @@ project(done)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(done main.cpp create_test_cases.h TypedValue.h expr_maker.h TypedValue.cpp parser.h evaluate_expr.h control_flow.h Machine.h program_executor.h panic.h program_executor.cpp Expr.h evaluate_expr.cpp panic.cpp parse.h)
+add_executable(done main.cpp create_test_cases.h TypedValue.h expr_maker.h TypedValue.cpp parser.h evaluate_expr.h control_flow.h Machine.h program_executor.h panic.h program_executor.cpp Expr.h evaluate_expr.cpp panic.cpp parse.h Tokenize.h)

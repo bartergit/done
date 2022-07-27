@@ -7,203 +7,236 @@
 #include "optional"
 #include "TypedValue.h"
 
-enum TokenType {
-    IDENTIFIER,
-    SPACE,
-    OPERATOR,
-    NUMBER,
-    SYMBOL
-};
-
-bool is_space(char c) {
-    return c == ' ' or c == '\n' or c == '\t';
-}
-
-std::set<std::string> bin_operators{"+", "-", "*", "/", "==", "%", "&&", "||",
-                                    "===", "!=", "!==", "."
-};
-
-void tokenize(const std::string &input) {
-    auto last_token = SPACE;
-    std::stringstream ss;
-    std::vector<std::pair<TokenType, std::string>> result{};
-    for (char c: input) {
-        if (last_token == SPACE) {
-            if (is_space(c)) {
-                continue;
-            } else if (isalpha(c) or c == '_') {
-                last_token = IDENTIFIER;
-                ss << c;
-            } else if (isdigit(c)) {
-                last_token = NUMBER;
-                ss << c;
-            }
-        } else if (last_token == IDENTIFIER) {
-            if (is_space(c)) {
-                result.emplace_back(last_token, ss.str());
-                ss.clear();
-                last_token = SPACE;
-            } else if (isalpha(c)) {
-                ss << c;
-            } else {
-                result.emplace_back(last_token, ss.str());
-                ss.clear();
-                ss << c;
-                last_token = SYMBOL;
-            }
-        } else if (last_token == NUMBER) {
-            if (is_space(c)) {
-                result.emplace_back(last_token, ss.str());
-                ss.clear();
-                last_token = SPACE;
-            } else if (isdigit(c)) {
-                ss << c;
-            } else if (isalpha(c) or c == '_') {
-                last_token = IDENTIFIER;
-                ss << c;
-            } else {
-                result.emplace_back(last_token, ss.str());
-                ss.clear();
-                last_token = SYMBOL;
-                ss << c;
-            }
-        } else
-//            if (last_token == SYMBOL)
-        {
-            if (is_space(c)) {
-                result.emplace_back(last_token, ss.str());
-                last_token = SPACE;
-                ss.clear();
-            } else if (isalpha(c) or c == '_') {
-                result.emplace_back(last_token, ss.str());
-                last_token = IDENTIFIER;
-                ss.clear();
-                ss << c;
-            } else if (isdigit(c)) {
-                result.emplace_back(last_token, ss.str());
-                last_token = NUMBER;
-                ss.clear();
-                ss << c;
-            } else if (bin_operators.contains(ss.str() + c)) {
-                ss << c;
-            } else if (bin_operators.contains(ss.str())) {
-                result.emplace_back(OPERATOR, ss.str());
-                ss.clear();
-                ss << c;
-            } else {
-                result.emplace_back(SYMBOL, ss.str());
-                ss.clear();
-                ss << c;
-            }
-        }
-    }
-}
-
-typedef std::pair<TokenType, std::string> Token;
-
-struct NewParser {
-    std::vector<Token> tokens;
-    int i = 0;
-
-    void expect(TokenType expected_token, const std::string &expected_value) {
-    }
-
-    std::string expect(TokenType token) {
-
-    }
-
-    std::pair<TokenType, std::string> next() {
-    }
-
-    std::optional<TypedValue> parse_number() {
-        auto number = expect(NUMBER);
-        return TypedValue(std::stof(number));
-    }
-
-    void parse_expression() {
-        while (next() != Token(SYMBOL, ";")) {
-            auto s = parse_number();
-        }
-    }
-
 #define EXPECT(token, value) if (expect(token) != value){ \
+    i = before_i; \
     return {}; \
 }
 
-    std::optional<> parse_let() {
-        EXPECT(IDENTIFIER, "left");
-        auto name = expect(IDENTIFIER);
-        expect(SYMBOL, "=");
-        parse_expression();
-    }
-};
-
-struct Parser {
-    std::string input;
+struct NewParser {
+    std::vector <Token> tokens;
     int i = 0;
 
-
-    char peek_char() {
-        return input.at(i++);
+    bool empty() const {
+        return i >= tokens.size();
     }
 
-    char look_char() {
-        return input.at(i);
-    }
-
-    std::string peek_identifier() {
-        std::stringstream ss;
-        auto c = peek_char();
-        if (!isalpha(c) and c != '_') {
+    std::optional <std::string> expect(TokenType expected_token) {
+        if (empty()) {
             return {};
         }
-        while (true) {
-            c = peek_char();
-            if (empty() or !(isalnum(c) or c == '_'))
-                break;
-            ss << c;
-        }
-        return ss.str();
-    }
-
-    std::string peek_non_alphanum_sequence() {
-        std::stringstream ss;
-        while (true) {
-            auto c = peek_char();
-            if (c == ' ' or c == '\n' or isalnum(c))
-                break;
-            ss << c;
-        }
-        return ss.str();
-    }
-
-    [[nodiscard]] bool empty() const {
-        return i >= input.size();
-    }
-
-    void skip_spaces() {
-        while (!empty() and look_char() == ' ') {
-            peek_char();
-        }
-    }
-
-    std::optional<std::string> parse_operator() {
-        auto token = peek_non_alphanum_sequence();
-        for (auto &op: operators) {
-            if (token == op) {
-                return op;
-            }
+        auto &[token, item] = tokens.at(i++);
+        if (token == expected_token) {
+            return item;
         }
         return {};
     }
 
-    std::optional<std::string> parse_int() {
-        std::stringstream ss;
-        if (!isdigit(look_char()))
-            return {};
-        while (!empty() and isdigit(look_char())) {
-            ss << peek_char();
+    std::pair <TokenType, std::string> next() {
+        return tokens.at(i);
+    }
+
+    std::pair <TokenType, std::string> consume() {
+        return tokens.at(i++);
+    }
+
+    std::optional <TypedValue> parse_number() {
+        auto before_i = i;
+        if (auto number = expect(NUMBER_TOKEN)) {
+            if (i + 1 < tokens.size() and next() == Token(OPERATOR, ".")) {
+                i++;
+                auto &[next_token, next_item] = consume();
+                if (next_token == NUMBER_TOKEN) {
+                    return TypedValue(std::stof(*number + "." + next_item));
+                }
+                i -= 2;
+            }
+            return TypedValue(std::stof(*number));
         }
-        return ss.str();
+        i = before_i;
+        return {};
+    }
+
+    std::optional <TypedValue> parse_string() {
+        auto before_i = i;
+        if (auto str = expect(STRING_LIT)) {
+            return TypedValue(str);
+        }
+        i = before_i;
+        return {};
+    }
+
+    std::optional <std::string> parse_operator() {
+        auto before_i = i;
+        if (auto op = expect(OPERATOR)) {
+            return op;
+        }
+        i = before_i;
+        return {};
+    }
+
+    std::optional <Expr> parse_identifier() {
+        auto before_i = i;
+        if (auto id = expect(IDENTIFIER)) {
+            if (*id == "null") {
+                return new SingleExpr{TypedValue(NULLJS)};
+            }
+            if (*id == "undefined") {
+                return new SingleExpr{TypedValue(UNDEFINED)};
+            }
+            if (*id == "true" or *id == "false") {
+                return new SingleExpr{TypedValue(*id == "true")};
+            }
+            return new VariableRef(*id);
+        }
+        i = before_i;
+        return {};
+    }
+
+    std::optional <TypedValue> parse_object() {
+        auto before_i = i;
+        EXPECT("{");
+        std::unordered_map <std::string, TypedValue> data{};
+        if (!empty() and next() == Token(SYMBOL, '}')) {
+            consume();
+            return TypedValue(data);
+        }
+        while (true) {
+            auto key = parse_lvalue();
+            if (!key.holds_value()) {
+                i = before_i;
+                return {};
+            }
+            EXPECT(":");
+            auto value = parse_expression();
+            if (!value.holds_value()) {
+                i = before_i;
+                return {};
+            }
+            data.insert({key, value});
+            EXPECT(",");
+        }
+        if (!empty() and look() == Token(SYMBOL, '}')) {
+            consume()
+            break;
+        }
+        return TypedValue(data);
+    }
+
+
+    std::optional <Expr> parse_lvalue() {
+        if (auto num = parse_number()) {
+            return new SingleExpr(*num)
+        }
+        if (auto str = parse_string()) {
+            return new SingleExpr(*str);
+        }
+        if (auto expr = parse_identifier()) {
+            return *expr;
+        }
+    }
+
+    std::optional <std::vector<Expr>> parse_expression() {
+        std::vector <Expr> result{};
+        auto before_i = i;
+        while (true) {
+            if (auto lvalue = parse_lvalue()) {
+                result.push_back(*lvalue);
+                continue;
+            }
+            if (auto op = parse_operator()) {
+                result.push_back(new BinExpr(*op));
+                continue;
+            }
+            if (auto ob = parse_object()) {
+                result.push_back(new SingleExpr{*ob});
+                continue;
+            }
+            if (result.empty()) {
+                return {};
+            }
+            return result;
+        }
+    }
+
+    std::optional <Let> parse_let() {
+        auto before_i = i;
+        EXPECT(IDENTIFIER, "let");
+        auto name = expect(IDENTIFIER);
+        if (name.holds_value()) {
+            i = before_i;
+            return {};
+        }
+        EXPECT(SYMBOL, "=");
+        if (auto expr = parse_expression()) {
+            EXPECT(";");
+            return Let{*name, *expr};
+        }
+        i = before_i;
+        return {};
+    }
+
+    std::optional <Let> parse_var() {
+        auto before_i = i;
+        EXPECT(IDENTIFIER, "var");
+        auto name = expect(IDENTIFIER);
+        if (!name.holds_value()) {
+            i = before_i;
+            return {};
+        }
+        EXPECT(SYMBOL, "=");
+        if (auto expr = parse_expression()) {
+            EXPECT(";");
+            return Let{*name, *expr};
+        }
+        i = before_i;
+        return {};
+    }
+
+    std::optional <If> parse_if() {
+        auto before_i = i;
+        EXPECT(IDENTIFIER, "if");
+        EXPECT("(");
+        auto expr = parse_expression();
+        if (!expr.holds_value()) {
+            i = before_i;
+            return {};
+        }
+        EXPECT(")");
+        if (auto body = parse_body()) {
+            return If{*expr, *body};
+        }
+        i = before_i;
+        return {};
+    }
+
+    std::optional <Statement> parse_statement() {
+        if (auto var = parse_var()) {
+            return *var;
+        }
+        if (auto let = parse_let()) {
+            return *let;
+        }
+        if (auto if_statement = parse_if()) {
+            return *if_statement;
+        }
+        return {};
+    }
+
+    std::optional <std::vector<Statement>> parse_body() {
+        auto before_i = i;
+        EXPECT(SYMBOL, "{");
+        std::vector <Statement> body{};
+        while (true) {
+            auto statement = parse_statement();
+            if (!statement.holds_value()) {
+                i = before_i;
+                return {};
+            }
+            body.push_back(*statement);
+            if (!empty() and look() == Token(SYMBOL, '}')) {
+                consume()
+                return body;
+            }
+        }
     }
 };
